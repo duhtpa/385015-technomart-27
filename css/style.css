@@ -192,12 +192,18 @@ a {
   background-color: #ee3643;
 }
 
-.goods_item_popup {
-  display: none;
+.goods_item_popup *{
+  /* display: none; */
   font-size: 14px;
+  font-weight: bold;
   text-transform: uppercase;
   line-height: 1.286;
   text-align: center;
+}
+
+.goods_item_popup button {
+  border: 3px solid #63a63e;
+  border-radius: 2px;
 }
 
 .goods_item_popup a {
