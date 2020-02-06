@@ -46,6 +46,10 @@ a {
   color: #ffffff;
 }
 
+.page_header_cart {
+  background-color: #ee3643;
+}
+
 .page_header_purchase {
   background-color: #63a63e;
 }
