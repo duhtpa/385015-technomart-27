@@ -228,6 +228,26 @@ a {
   font-size: 14px;
 }
 
+.purchase_popup p{
+  font-size: 30px;
+}
+
+.purchase_popup * {
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  border: none;
+}
+
+.purchase_popup div {
+  background-color: #f1f1f1;
+}
+
+.purchase_popup a {
+  background: #ee3643;
+  font-weight: normal;
+}
+
 /* FOOTER */
 .page_footer {
   font-size: 18px;
