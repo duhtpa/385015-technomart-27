@@ -248,6 +248,24 @@ a {
   font-weight: normal;
 }
 
+.feedback_popup label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feedback_popup input::placeholder {
+  font-size: 13px;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.feedback_popup button {
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+  border: none;
+}
+
 /* FOOTER */
 .page_footer {
   font-size: 18px;
