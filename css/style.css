@@ -1,5 +1,11 @@
 body {
-  font-family: "Cuprum" sans-serif; /* почистить */
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .visually-hidden {
@@ -11,4 +17,228 @@ body {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* HEADER */
+.page_header_top,
+.main_nav {
+  font-size: 17px;
+  line-height: 1.059;
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.page_header_logo,
+.page_footer_logo,
+.about_more-link,
+.contacts_feedback-btn {
+  background-color: #ee3643;
+}
+
+.page_header_search input {
+  background: none;
+  border: none;
+}
+
+.page_header_search input::placeholder {
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif; /* почистить */
+  font-size: 17px;
+  color: #ffffff;
+}
+
+.page_header_purchase {
+  background-color: #63a63e;
+}
+
+.site_about {
+  font-size: 16px;
+  color: #ee3643;
+  font-style: italic;
+  line-height: 1.438;
+}
+
+.page_header_contacts {
+  font-weight: bold;
+}
+
+.page_header_contacts a {
+  font-size: 21px;
+  color: #ee3643;
+}
+
+.page_header_contacts p {
+  font-size: 14px;
+  color: #32425c;
+  line-height: 1.714;
+  text-align: center;
+}
+
+.user a {
+  font-size: 21px;
+  color: #000000;
+}
+
+.user .user_log-out {
+  font-size: 0;
+}
+
+.user_nav a {
+  font-size: 16px;
+  color: #32425c;
+  text-decoration: underline;
+  line-height: 1.125;
+}
+
+/* MAIN */
+/* MAIN > WRAPPER*/
+.about_title,
+.contacts_title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.about_descr,
+.contacts_descr {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.about_partners {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.about_more-link,
+.contacts_feedback-btn {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: center;
+}
+
+.breadcrumbs a,
+.breadcrumbs li,
+.catalog {
+  color: #000000;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+}
+
+.breadcrumbs a,
+.breadcrumbs li {
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.384;
+}
+
+.page_title {
+  font-size: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+}
+
+/* MAIN > CATALOG */
+
+.catalog_filter {
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+}
+
+.catalog_filter legend {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.765;
+}
+
+.catalog_filter button {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.384;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.goods_item_name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #000000;
+  line-height: 1.111;
+  text-align: center;
+}
+
+.goods_item_price {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.059;
+  text-align: center;
+}
+
+.goods_item_price del {
+  color: #999999;
+  /* text-decoration: line-through; */
+}
+
+.goods_item_price span {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.goods_item_popup {
+  display: none;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.286;
+  text-align: center;
+}
+
+.goods_item_popup a {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.goods_item_popup button {
+  color: #32425c;
+}
+
+.catalog_about {
+  background-color: #f2f6f8;
+}
+
+.catalog_about_title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.catalog_about_descr {
+  font-size: 14px;
+}
+
+/* FOOTER */
+.page_footer {
+  font-size: 18px;
+  color: #f3f7f9;
+  line-height: 1.333;
+  background-color: #32425c;
+}
+
+.page_footer_bottom {
+  font-size: 16px;
+  color: #ffffff;
+  line-height: 1.125;
+  background-color: #293449;
+}
+
+.footer_nav {
+  color: #f1f5f7;
+}
+
+.footer_nav_opportunity a,
+.footer_bottom_feedback a,
+.footer_bottom_developer a {
+  color: #ffd180;
 }
