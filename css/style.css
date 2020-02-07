@@ -5,6 +5,13 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.page_header_top a,
+.main_nav a,
+.footer_nav a,
+.purchase_popup a,
+.phone_link {
   color: #ffffff;
 }
 
