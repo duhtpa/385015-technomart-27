@@ -174,7 +174,8 @@ a {
   text-align: center;
 }
 
-.goods_item_price {
+.goods_item_price,
+.goods_item_discount {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
@@ -182,12 +183,11 @@ a {
   text-align: center;
 }
 
-.goods_item_price del {
+.goods_item_discount {
   color: #999999;
-  /* text-decoration: line-through; */
 }
 
-.goods_item_price span {
+.goods_item_price {
   color: #ffffff;
   background-color: #ee3643;
 }
