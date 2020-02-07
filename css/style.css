@@ -175,7 +175,7 @@ a {
 }
 
 .goods_item_price,
-.goods_item_discount {
+.goods_item_price-old {
   font-size: 17px;
   font-weight: bold;
   text-transform: uppercase;
@@ -183,13 +183,17 @@ a {
   text-align: center;
 }
 
-.goods_item_discount {
+.goods_item_price-old {
   color: #999999;
 }
 
 .goods_item_price {
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.goods_item_image + .goods_item_price { 
+  margin-top: 20px;
 }
 
 .goods_item_popup *{
