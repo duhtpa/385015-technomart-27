@@ -1,10 +1,10 @@
 html {
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  color: #000000;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
-  color: #000000;
   margin: 0;
 }
 
@@ -254,6 +254,7 @@ img {
 }
 
 .purchase_popup * {
+  font-size: 14px;
   font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
   text-transform: uppercase;
   font-weight: bold;
@@ -267,6 +268,10 @@ img {
 .purchase_popup a {
   background: #ee3643;
   font-weight: normal;
+}
+
+.purchase_popup button {
+  background: #ffffff;
 }
 
 .feedback_popup label {
