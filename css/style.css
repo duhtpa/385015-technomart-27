@@ -70,8 +70,9 @@ img {
   background-color: #63a63e;
 }
 
-.site_about {
+.page_header_info {
   font-size: 16px;
+  font-weight: bold;
   color: #ee3643;
   font-style: italic;
   line-height: 1.438;
