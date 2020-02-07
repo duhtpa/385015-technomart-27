@@ -183,6 +183,10 @@ img {
   text-align: center;
 }
 
+.goods_item {
+  list-style: none;
+}
+
 .goods_item_name {
   font-size: 18px;
   font-weight: bold;
