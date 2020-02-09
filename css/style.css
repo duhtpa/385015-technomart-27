@@ -157,7 +157,7 @@ img {
   display: flex;
 }
 
-.user a {
+.user_link {
   font-size: 21px;
   color: #000000;
   display: block;
@@ -172,7 +172,7 @@ img {
   justify-content: space-between;
 }
 
-.user .user_log-out {
+.user_log-out {
   font-size: 0;
   width: 45px;
 }
