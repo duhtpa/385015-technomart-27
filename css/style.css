@@ -628,6 +628,7 @@ img {
 
 .footer_bottom_copyright{
   width: 228px;
+  margin-right: 40px;
 }
 
 .footer_bottom li {
@@ -635,11 +636,13 @@ img {
   list-style-type: none;
 }
 
-.footer_bottom ul {
+.social {
   display: flex;
-  width: 133px;
-  margin-left: 160px;
-  margin-right: 118px;
+  /* width: 133px; */
+  width: 370px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 0;
 }
 
