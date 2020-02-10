@@ -317,6 +317,7 @@ img {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   padding-left: 0;
 }
 
@@ -404,7 +405,7 @@ img {
 }
 
 .catalog_goods {
-  max-width: 699px;
+  width: 729px;
   margin-left: 20px;
 }
 
@@ -418,6 +419,8 @@ img {
   height: 318px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
+  margin-left: 20px;
+  /* margin-right: 10px; */
 }
 
 .goods_item article {
@@ -493,8 +496,8 @@ img {
 .goods_list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin: 0;
+  margin-left: -15px;
 }
 
 .catalog_about {
