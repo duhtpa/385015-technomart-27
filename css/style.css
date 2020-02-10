@@ -252,7 +252,7 @@ img {
 
 /* MAIN */
 /* MAIN > WRAPPER*/
-.about_and_contacts {
+.blocks_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 86px;
