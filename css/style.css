@@ -255,8 +255,8 @@ img {
 .about_and_contacts {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 86px;
-  margin-top: 82px;
+  padding-bottom: 86px;
+  padding-top: 82px;
 }
 
 .company_about {
