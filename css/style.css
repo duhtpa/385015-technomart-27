@@ -416,11 +416,10 @@ img {
 .goods_item {
   list-style: none;
   width: 220px;
-  height: 318px;
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
   margin-left: 20px;
-  /* margin-right: 10px; */
+  padding-bottom: 21px;
 }
 
 .goods_item article {
@@ -430,6 +429,10 @@ img {
 
 .goods_item img {
   order: -1;
+}
+
+.goods_item h3 {
+  margin-top: 0;
 }
 
 .goods_item h3,
@@ -463,7 +466,10 @@ img {
 .goods_item_price {
   color: #ffffff;
   background-color: #ee3643;
-  padding-top: 13px;padding-bottom: 13px;
+  margin-top: 13px;
+  margin-bottom: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
 }
 
 .goods_item_image + .goods_item_price { 
