@@ -63,6 +63,7 @@ img {
 
 .page_header_middle .wrapper {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .page_header_top,
