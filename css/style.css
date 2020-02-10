@@ -309,7 +309,10 @@ img {
 
 .contacts_feedback-btn {
   width: 300px;
-  margin-top: 40px;
+}
+
+.contacts_map {
+  margin-bottom: 40px;
 }
 
 .breadcrumbs {
