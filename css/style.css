@@ -85,8 +85,8 @@ img {
 .page_footer_logo {
   display: block;
   width: 220px;
-  height: 47px;
-  border-bottom: 5px solid #b52933;
+  height: 42px;
+  box-shadow: 0 5px #b52933;
 }
 
 .page_footer_logo {
@@ -149,6 +149,7 @@ img {
   line-height: 1.714;
   text-align: center;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .user {
@@ -234,7 +235,7 @@ img {
   justify-content: space-around;
   align-items: center;
   background-color: #32425c;
-  border-bottom: 5px solid #293449;
+  box-shadow: 0 5px #293449;
 }
 
 /* MAIN */
