@@ -17,7 +17,8 @@ a {
 }
 
 img { 
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -48,6 +49,16 @@ img {
 /* HEADER */
 .page_header_top a:not(:first-child) {
   width: 150px;
+  padding-bottom: 12px;
+  padding-left: 45px;
+  padding-top: 12px;
+}
+
+.page_header_top a:last-child {
+  /* padding-bottom: 15px; */
+  padding-left: 0;
+  /* padding-top: 12px; */
+  text-align: center;
 }
 
 .page_header_top .wrapper {
@@ -58,7 +69,7 @@ img {
 .page_header_middle {
   background-color: #f3f6f8;
   padding-top: 45px;
-  padding-bottom: 33px;
+  padding-bottom: 39px;
 }
 
 .page_header_middle .wrapper {
@@ -81,11 +92,15 @@ img {
   background-color: #ee3643;
 }
 
+.page_footer .phone_link {
+  padding-left: 0;
+}
+
 .page_header_logo,
 .page_footer_logo {
   display: block;
   width: 220px;
-  padding-top: 11px;
+  padding-top: 12px;
   padding-bottom: 9px;
   box-shadow: 0 5px #b52933;
   text-align: center;
@@ -93,24 +108,40 @@ img {
 
 .page_footer_logo {
   /* height: 68px; */
-  padding-top: 22px;
-  padding-bottom: 17px;
+  padding-top: 20px;
+  padding-bottom: 12px;
 
 }
 
 .page_header_search {
-  width: 270px;
+  position: relative;
+  /* left: 17px; */
 }
 
 .page_header_search input {
+  width: 270px;
+  height: 100%;
   background: none;
+  font-size: 17px;
   border: none;
+  padding-bottom: 12px;
+  padding-left: 50px;
+  padding-top: 12px;
+  position: relative;
+  display: inline-block;
 }
 
 .page_header_search input::placeholder {
   font-family: "Cuprum", "Arial", "Helvetica", sans-serif; /* почистить */
   font-size: 17px;
   color: #ffffff;
+}
+
+.page_header_search svg {
+  position: absolute;
+  left: 17px;
+  margin-top: 10px;
+  opacity: 30%;
 }
 
 .page_header_cart {
@@ -122,8 +153,8 @@ img {
 
 .page_header_purchase {
   background-color: #63a63e;
-  padding-top: 13px;
-  padding-bottom: 13px;
+  /* padding-top: 13px;
+  padding-bottom: 13px; */
 }
 
 .page_header_info {
@@ -134,12 +165,13 @@ img {
   line-height: 1.438;
   width: 196px;
   margin: 0;
-  margin-left: 43px;
+  padding-top: 3px;
+  margin-left: 50px;
 }
 
 .page_header_contacts {
   font-weight: bold;
-  margin-left: 65px;
+  margin-left: 75px;
 }
 
 .page_header_contacts a {
@@ -148,8 +180,8 @@ img {
   color: #ee3643;
   border: 3px solid #ffffff;
   width: 270px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 6px;
   text-align: center;
 }
 
@@ -158,8 +190,13 @@ img {
   color: #32425c;
   line-height: 1.714;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: 0;
+  margin: 0;
+  padding-top: 5px;
+}
+
+.phone_link {
+  margin-top: 0px;
+  padding-left: 25px;
 }
 
 .user {
@@ -174,13 +211,16 @@ img {
   display: block;
   padding-top: 10px;
   padding-bottom: 10px;
+  padding-left: 48px;
+  padding-right: 24px;
   background-color: #ffffff;
-  text-align: center;
+  text-al: center;
 }
 
 .user ul {
   display: flex;
   padding: 0;
+  margin: 0px;
   width: 281px;
   justify-content: space-between;
 }
@@ -219,9 +259,8 @@ img {
   width: 150px;
 }
 
-.main_nav {
-  display: flex;
-  background-color: #f3f6f8;
+.user_registration a{
+  padding-left: 20px;
 }
 
 .user_nav a {
@@ -233,17 +272,28 @@ img {
   margin-left: 18px;
 }
 
+.main_nav {
+  display: flex;
+  background-color: #f3f6f8;
+}
+
+.main_nav a {
+  display: block;
+  padding: 18px 30px 19px;
+}
+
+
 .main_nav li {
   list-style: none;
-  padding: 19px 30px;
 }
 
 .main_nav ul {
   display: flex;
   width: 940px;
-  padding-left: 0;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-top: 0;
-  margin-bottom: 59px;
+  margin-bottom: 65px;
   justify-content: space-around;
   align-items: center;
   background-color: #32425c;
@@ -256,7 +306,7 @@ img {
   display: flex;
   justify-content: space-between;
   padding-bottom: 86px;
-  padding-top: 82px;
+  padding-top: 78px;
 }
 
 .company_about {
@@ -271,20 +321,24 @@ img {
 .contacts_title {
   font-size: 30px;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin: 0;
+  margin-bottom: 30px;
 }
 
 .about_descr,
 .contacts_descr {
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  line-height: 1.5;
 }
 
 .about_partners {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 40px;
+  margin-top: -5px;
+  margin-bottom: 34px;
+  line-height: 1.37;
 }
 
 .about_partners li:not(:first-child) {
@@ -300,7 +354,7 @@ img {
   line-height: 1.286;
   text-align: center;
   padding-top: 13px;
-  padding-bottom: 13px;
+  padding-bottom: 10px;
 }
 
 .about_more-link {
@@ -609,7 +663,7 @@ img {
 }
 
 .page_footer_nav {
-  padding-top: 24px;
+  padding-top: 20px;
 }
 
 .footer_nav_opportunity {
