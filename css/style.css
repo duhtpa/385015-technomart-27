@@ -448,16 +448,20 @@ img {
 .filter_group {
   border: none;
   border-bottom: 1px solid #e5e5e5;
-  margin-top: 10px;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: -5px;
   padding: 0;
 }
 
-.filter_group:last-child {
+.filter_group:last-of-type {
   border: none;
 }
 
 .filter_group li {
   list-style: none;
+  margin-bottom: 21px;
+  padding-left: 35px;
 }
 
 .filter_group ul {
@@ -465,6 +469,45 @@ img {
 }
 .filter_group input {
   margin: 0;
+  display: none;
+}
+
+.filter_group label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter_checkbox + label::before,
+.filter_radio + label::before {
+  content: "";
+  position: absolute;
+}
+
+
+.filter_checkbox + label::before {
+  width: 23px;
+  height: 23px;
+  left: -31px;
+  top: 0;
+  background-image: url(../img/checkbox_off.svg);
+}
+
+.filter_checkbox:checked + label::before {
+  background-image: url(../img/checkbox_on.svg);
+}
+
+.filter_radio + label::before {
+  width: 25px;
+  height: 25px;
+  left: -33px;
+  top: -2px;
+  background-image: url(../img/radio_off.svg);
+}
+
+.filter_radio:checked + label::before {
+  background-image: url(../img/radio_on.svg);
 }
 
 .catalog_filter legend {
@@ -483,9 +526,9 @@ img {
   width: 140px;
   background-color: transparent;
   border: 1px solid #e5e5e5;
-  margin-top: 75px;
-  padding-top: 15px;
-  padding-bottom: 14px;
+  margin-top: 33px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .catalog_goods {
