@@ -656,18 +656,22 @@ img {
 .catalog_about {
   background-color: #f2f6f8;
   padding-bottom: 73px;
-  padding-top: 67px;
+  padding-top: 63px;
 }
 
 .catalog_about_title {
   font-size: 30px;
   text-transform: uppercase;
-  margin-top: 0;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
 }
 
 .catalog_about_descr {
   font-size: 14px;
-  margin-bottom: 0;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
 }
 
 .purchase_popup {
