@@ -744,11 +744,11 @@ img {
 .page_footer .wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 53px;
+  margin-bottom: 50px;
 }
 
 .page_footer_logo {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .page_footer_nav li {
