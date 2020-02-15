@@ -528,6 +528,7 @@ img {
   text-align: center;
   padding-top: 13px;
   padding-bottom: 10px;
+  border-radius: 3px;
 }
 
 .about_more-link {
@@ -701,6 +702,7 @@ img {
   margin-top: 33px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 3px;
 }
 
 .catalog_goods {
@@ -785,6 +787,7 @@ img {
   margin-left: -10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  border-radius: 3px;
 }
 
 .goods_item_price::after {
@@ -924,7 +927,7 @@ img {
 }
 
 .purchase_popup {
-  /* display: none; */
+  display: none;
   position: fixed;
   width: 620px;
   border-top: 6px solid #ff5357 ;
@@ -1006,7 +1009,7 @@ img {
 
 
 .feedback_popup {
-  /* display: none; */
+  display: none;
   position: fixed;
   width: 620px;
   background-color: #ffffff;
