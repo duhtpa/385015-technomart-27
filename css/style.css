@@ -288,6 +288,15 @@ img {
   padding: 18px 30px 19px;
 }
 
+.main_nav a:hover,
+.main_nav a:focus {
+  background-color: #293449;
+}
+
+.main_nav a:active {
+  background-color: #1d2739;
+  box-shadow: 0 5px #1d2739;
+}
 
 .main_nav li {
   list-style: none;
