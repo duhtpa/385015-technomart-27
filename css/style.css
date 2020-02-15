@@ -1205,12 +1205,14 @@ img {
 
 .social {
   display: flex;
-  /* width: 133px; */
+  flex-wrap: wrap;
   width: 370px;
-  justify-content: center;
+  /* justify-content: center; */
   margin-left: auto;
   margin-right: auto;
-  padding-left: 0;
+  margin-top: 12px;
+  padding-left: 118px;
+  padding-right: 90px;
 }
 
 .social a {
@@ -1230,7 +1232,8 @@ img {
 }
 
 .social li {
-  margin-right: 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 
 .footer_nav {
