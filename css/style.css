@@ -510,6 +510,11 @@ img {
   background-image: url(../img/radio_on.svg);
 }
 
+.filter_checkbox:disabled + label,
+.filter_radio:disabled + label {
+  opacity: 0.3;
+}
+
 .catalog_filter legend {
   font-size: 17px;
   font-weight: bold;
