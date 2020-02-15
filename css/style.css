@@ -221,7 +221,7 @@ img {
 .user ul {
   display: flex;
   padding: 0;
-  margin: 0px;
+  margin: 0;
   width: 230px;
   justify-content: space-between;
 }
@@ -255,12 +255,9 @@ img {
   margin-bottom: 7px;
 }
 
-/* .user_account ul {
-  justify-content: start;
-} */
-
 .user li {
   list-style: none;
+  height: 43.75px;
 }
 
 .user .user_name {
@@ -289,6 +286,30 @@ img {
 
 .user_link:active,
 .user_link:active path {
+  fill: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.user_link {
+  position: relative;  
+}
+
+.user_link svg {
+  position: absolute; 
+  width: 20px;
+  height: 17px;
+  top: 13px;
+  left: 15px; 
+}
+
+.user_log-in a:hover,
+.user_log-in:hover path {
+  color: #ee3643;
+  fill: #32425c;
+}
+
+.user_log-in a:active,
+.user_log-in:active path {
   fill: rgba(0, 0, 0, 0.2);
   color: rgba(0, 0, 0, 0.5);
 }
