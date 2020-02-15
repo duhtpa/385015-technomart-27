@@ -282,13 +282,24 @@ img {
   top: 13px;
 }
 
-.user_name:hover path {
+.user_link:focus path,
+.user_link:hover path {
   fill: #000000;
+}
+
+.user_link:active,
+.user_link:active path {
+  fill: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .user_registration a{
   padding-left: 20px;
   padding-right: 24px;
+}
+
+.user_nav {
+  position: relative;
 }
 
 .user_nav a {
@@ -298,6 +309,26 @@ img {
   line-height: 1.125;
   background-color: transparent;
   margin-left: 18px;
+}
+
+.user_nav li:last-child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  background-color: #32425c;
+  border-radius: 50%;
+}
+
+.user_nav a:hover,
+.user_nav a:focus {
+  color: #ee3643;
+}
+
+.user_nav a:active {
+  color: #cbd1d8;
 }
 
 .main_nav {
