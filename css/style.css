@@ -1058,6 +1058,23 @@ img {
 
 .map_popup {
   display: none;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  margin-left: calc(50% - 470px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  max-height: 446px;
+}
+
+.map_popup::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 10px;
+  top: 8px;
+  background-image: url(../img/btn_close.svg);
 }
 
 /* FOOTER */
