@@ -547,6 +547,7 @@ img {
 }
 
 .goods_item {
+  position: relative;
   list-style: none;
   width: 220px;
   border: 1px solid #e5e5e5;
@@ -554,6 +555,13 @@ img {
   margin-left: 20px;
   padding-bottom: 21px;
 }
+
+.goods_item:focus,
+.goods_item:hover {
+  box-shadow: 0 10px 25px rgb(41, 52, 73, 0.5);
+}
+
+
 
 .goods_item article {
   display: flex;
@@ -628,8 +636,36 @@ img {
   margin-top: 20px;
 }
 
-.goods_item_popup *{
+.goods_item_popup {
+  padding: 43px 35px;
+  background-color: #fff;
+  position: absolute;
+}
+
+.goods_item .goods_item_popup {
   display: none;
+}
+
+.goods_item .flag {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  text-indent: -1000px;
+  overflow: hidden;
+  z-index: 20;
+}
+
+.goods_item .flag-new {
+  background: url(../img/flag_new.png) no-repeat 0 0;
+}
+
+.goods_item:hover .goods_item_popup {
+  display: block;
+}
+
+.goods_item_popup *{
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
@@ -643,12 +679,53 @@ img {
 }
 
 .goods_item_popup a {
+  display: block;
   color: #ffffff;
   background-color: #63a63e;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  padding-left: 48px;
+  padding-right: 44px;
+  box-shadow: 0 5px 0 #367315;
+  border-radius: 3px;
+  margin-bottom: 13px;
+}
+
+.goods_item_popup a:hover {
+  background: #5fbb2d;
+}
+
+.goods_item_popup a:active {
+  background: #518534;
+  box-shadow: 0 5px 0 #518534;
 }
 
 .goods_item_popup button {
   color: #32425c;
+  background-color: transparent;
+  padding-top: 7px;
+  padding-right: 30px;
+  padding-bottom: 6px;
+  padding-left: 30px;
+  border-radius: 3px;
+}
+
+.goods_item_popup button:hover {
+  border-color: #32425c;
+}
+
+.goods_item_popup button:active {
+  border-color: #c1c6ce;
+  color: #c1c6ce;
+
+  /* по макету outline при нажатии не увидел, плюс клавиатурой/скринридером 
+  на попап не попасть. Поэтому убрал его */
+  outline: none;
+}
+
+.goods_item_popup a,
+.goods_item_popup button {
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 }
 
 .goods_list {
