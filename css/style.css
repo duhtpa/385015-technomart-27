@@ -214,7 +214,8 @@ img {
   padding-left: 48px;
   padding-right: 24px;
   background-color: #ffffff;
-  text-al: center;
+  text-align: center;
+  margin-right: 15px;
 }
 
 .user ul {
@@ -228,6 +229,7 @@ img {
 .user_log-out {
   font-size: 0;
   padding-left: 25px;
+  margin: 0;
 }
 
 .user_account {
@@ -237,6 +239,7 @@ img {
 
 .user_account div {
   display: flex;
+  margin-bottom: 7px;
 }
 
 /* .user_account ul {
@@ -247,26 +250,20 @@ img {
   list-style: none;
 }
 
-.user_log-in {
-  width: 121px;
-}
-
 .user .user_name {
   width: 350px;
   font-weight: bold;
   padding: 0;
   padding-left: 47px;
-  padding-top: 10px; 
+  padding-top: 11px; 
   margin: 0;
-  margin-bottom: 20px;
-}
-
-.user_registration {
-  width: 150px;
+  /* margin-bottom: 20px; */
+  padding-bottom: 10px;
 }
 
 .user_registration a{
   padding-left: 20px;
+  padding-right: 24px;
 }
 
 .user_nav a {
