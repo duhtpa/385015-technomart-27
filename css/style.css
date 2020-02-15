@@ -924,17 +924,54 @@ img {
 }
 
 .purchase_popup {
-  display: none;
+  /* display: none; */
+  position: fixed;
+  width: 620px;
+  border-top: 6px solid #ff5357 ;
+  bottom: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  left: calc(50% - 310px);
+  bottom: calc(50% - 141px);
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 32px;
+  padding-bottom: 80px;
+  z-index: 50;
+}
+
+.purchase_popup::after {
+  content: "";
+  position: absolute;
+  width: 21px;
+  height: 21px;
+  right: 10px;
+  top: 8px;
+  background-image: url(../img/btn_close.svg);
 }
 
 .purchase_popup p {
   font-size: 30px;
+  padding-left: 100px;
+  padding-bottom: 68px;
+}
+
+.purchase_popup p::before {
+  content: "";
+  position: absolute;
+  width: 66px;
+  height: 66px;
+  left: 80px;
+  top: 49px;
+  background-image: url(../img/mark.svg);
 }
 
 .purchase_popup * {
   font-size: 14px;
   font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
-  text-transform: uppercase;
   font-weight: bold;
   border: none;
 }
@@ -946,21 +983,37 @@ img {
 .purchase_popup a {
   background: #ee3643;
   font-weight: normal;
+  padding-left: 59px;
+  padding-right: 62px;
+  margin-right: 20px;
 }
 
 .purchase_popup button {
   background: #ffffff;
+  margin: 0;
+  padding: 0;
+  padding-left: 44px;
+  padding-right: 48px;
 }
 
+.purchase_popup button,
+.purchase_popup a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+
 .feedback_popup {
-  display: none;
-  position: absolute;
+  /* display: none; */
+  position: fixed;
   width: 620px;
   background-color: #ffffff;
-  bottom: 0;
-  right: 0;
   border-top: 6px solid #ff5357 ;
-  box-shadow: 0 0 25px #00000079;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  bottom: calc(50% - 211px);
+  left: calc(50% - 310px);
 }
 
 .feedback_popup::after {
@@ -1016,7 +1069,7 @@ img {
   padding-bottom: 11px;
 }
 
-.feedback_popup_bottom {
+.popup_bottom {
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -1058,11 +1111,12 @@ img {
 
 .map_popup {
   display: none;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   margin: 0;
   padding: 0;
-  margin-left: calc(50% - 470px);
+  bottom: calc(50% - 223px);
+  left: calc(50% - 470px);
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
   max-height: 446px;
 }
