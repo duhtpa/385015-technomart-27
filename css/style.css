@@ -206,6 +206,7 @@ img {
 }
 
 .user_link {
+  position: relative;
   font-size: 21px;
   color: #000000;
   display: block;
@@ -214,7 +215,6 @@ img {
   padding-left: 48px;
   padding-right: 24px;
   background-color: #ffffff;
-  text-align: center;
   margin-right: 15px;
 }
 
@@ -227,10 +227,23 @@ img {
 }
 
 .user_log-out {
+  position: relative;
   font-size: 0;
-  padding-left: 25px;
+  padding: 0;
   margin: 0;
 }
+
+.user_log-out svg {
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  right: 10px;
+  top: 14px;
+}
+
+.user_log-out:hover path {
+  fill: #000000;
+} 
 
 .user_account {
   flex-direction: column;
@@ -251,14 +264,26 @@ img {
 }
 
 .user .user_name {
+  position: relative;
   width: 350px;
   font-weight: bold;
   padding: 0;
-  padding-left: 47px;
   padding-top: 11px; 
   margin: 0;
-  /* margin-bottom: 20px; */
   padding-bottom: 10px;
+  padding-left: 47px;
+}
+
+.user_name svg {
+  position: absolute;
+  width: 20px;
+  height: 18px;
+  left: 13px;
+  top: 13px;
+}
+
+.user_name:hover path {
+  fill: #000000;
 }
 
 .user_registration a{
