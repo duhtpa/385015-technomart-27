@@ -703,6 +703,7 @@ img {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .catalog_goods {
