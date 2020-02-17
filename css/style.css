@@ -632,6 +632,19 @@ img {
   margin-right: 4px;
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.document_index svg:hover,
+.document_index svg:focus {
+  color: #c1c6ce;
+}
+
+.document_index svg:active,
+.breadcrumbs a:active {
+  color: #ee3643;
+  text-decoration: none;
+}
+
 .page_title {
   width: 940px;
   font-size: 30px;
