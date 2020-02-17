@@ -831,7 +831,7 @@ img {
   margin-left: -10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 3px;
+  border-radius: 3px 0 0 3px;
 }
 
 .goods_item_price::after {
