@@ -318,6 +318,7 @@ img {
   margin: 0;
   width: 230px;
   justify-content: space-between;
+  list-style: none;
 }
 
 .user_log-out {
@@ -352,7 +353,7 @@ img {
 }
 
 .user li {
-  list-style: none;
+  /* list-style: none; */
 }
 
 .user .user_name {
