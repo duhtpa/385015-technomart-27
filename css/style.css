@@ -703,9 +703,12 @@ img {
   left: 0;
   top: 0;
   background-image: url(../img/checkbox_off.svg);
+  background-repeat: no-repeat;
 }
 
 .filter_checkbox:checked + label::before {
+  width: 27px;
+  height: 23px;
   background-image: url(../img/checkbox_on.svg);
 }
 
@@ -724,6 +727,11 @@ img {
 .filter_checkbox:disabled + label,
 .filter_radio:disabled + label {
   opacity: 0.3;
+}
+
+.filter_checkbox:hover + label,
+.filter_checkbox:focus + label {
+  opacity: 0.5;
 }
 
 .catalog_filter legend {
