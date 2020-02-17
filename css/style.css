@@ -111,7 +111,10 @@ img {
 
 .page_header_logo:hover,
 .page_header_logo:focus,
-.page_header_logo:active {
+.page_header_logo:active,
+.page_footer_logo:hover,
+.page_footer_logo:focus,
+.page_footer_logo:active {
   background-color: #ca2c37;
 }
 
@@ -573,6 +576,18 @@ img {
   width: 300px;
 }
 
+.about_more-link:hover,
+.contacts_feedback-btn:hover,
+.about_more-link:focus,
+.contacts_feedback-btn:focus {
+  background-color: #ca2c37;
+}
+
+.about_more-link:active,
+.contacts_feedback-btn:active {
+  background-color: #ba2732;
+}
+
 .contacts_map {
   margin-bottom: 38px;
 }
@@ -936,7 +951,7 @@ img {
 
 .catalog_about {
   background-color: #f2f6f8;
-  padding-bottom: 73px;
+  padding-bottom: 18px;
   padding-top: 63px;
 }
 
@@ -953,6 +968,7 @@ img {
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  margin-bottom: 50px;
 }
 
 .purchase_popup {
@@ -1178,7 +1194,7 @@ img {
 .page_footer .wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 33px;
 }
 
 .page_footer_logo {
@@ -1215,7 +1231,7 @@ img {
   display: flex;
   align-items: center;
   padding-top: 23px;
-  padding-bottom: 19px;
+  padding-bottom: 9px;
 }
 
 .footer_bottom .wrapper {
