@@ -508,27 +508,47 @@ img {
   font-size: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 27px;
 }
 
 .about_descr,
 .contacts_descr {
   font-size: 14px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
   line-height: 1.5;
 }
 
+.about_descr:last-of-type {
+  margin-bottom: 5px;
+}
+
 .about_partners {
+  position: relative;
   font-size: 18px;
   font-weight: bold;
   margin-top: -5px;
-  margin-bottom: 34px;
+  margin-bottom: 35px;
   line-height: 1.37;
+  list-style: none;
+  padding: 0;
+  padding-top: 20px;
+  padding-left: 35px;
 }
 
 .about_partners li:not(:first-child) {
-  margin-top: 16px;
+  margin-top: 13px;
+}
+
+.about_partners li::before{
+  content: "";
+  position: relative;
+  display: block;
+  background-color: #ee3643;
+  width: 25px;
+  height: 2px;
+  top: 14px;
+  left: -39px;
 }
 
 .about_more-link,
@@ -553,7 +573,7 @@ img {
 }
 
 .contacts_map {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
 
 .breadcrumbs {
