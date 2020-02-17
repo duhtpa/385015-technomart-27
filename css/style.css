@@ -672,7 +672,6 @@ img {
 .filter_group li {
   list-style: none;
   margin-bottom: 21px;
-  padding-left: 35px;
 }
 
 .filter_group ul {
@@ -688,6 +687,7 @@ img {
   display: block;
   cursor: pointer;
   user-select: none;
+  padding-left: 35px;
 }
 
 .filter_checkbox + label::before,
@@ -700,7 +700,7 @@ img {
 .filter_checkbox + label::before {
   width: 23px;
   height: 23px;
-  left: -31px;
+  left: 0;
   top: 0;
   background-image: url(../img/checkbox_off.svg);
 }
@@ -712,7 +712,7 @@ img {
 .filter_radio + label::before {
   width: 25px;
   height: 25px;
-  left: -33px;
+  left: 0px;
   top: -2px;
   background-image: url(../img/radio_off.svg);
 }
