@@ -252,6 +252,7 @@ img {
 }
 
 .page_header_contacts {
+  position: relative;
   font-weight: bold;
   margin-left: 75px;
 }
@@ -265,6 +266,17 @@ img {
   padding-top: 9px;
   padding-bottom: 6px;
   text-align: center;
+}
+
+.page_header_contacts::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  top: 13px;
+  left: 15px;
+  background-image: url(../img/phone.svg);
 }
 
 .page_header_contacts p {
