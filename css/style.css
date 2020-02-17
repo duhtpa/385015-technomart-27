@@ -22,9 +22,10 @@ img {
 }
 
 .wrapper {
-  max-width: 940px;
+  max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 10px;
 }
 
 .page_header_top a,
@@ -577,6 +578,7 @@ img {
 }
 
 .breadcrumbs {
+  width: 940px;
   display: flex;
   flex-wrap: wrap;
   margin-top: 22px;
@@ -616,6 +618,7 @@ img {
 }
 
 .page_title {
+  width: 940px;
   font-size: 30px;
   color: #32425c;
   text-transform: uppercase;
