@@ -91,10 +91,22 @@
         <section class="catalog_filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
 
+          <span class="catalog_filter_title">Фильтр</span>
+
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter_group">
-              <legend class="filter_title">Цена</legend>
+              <legend class="filter_price_title">Цена</legend>
+
               <!-- форма фильтрации по цене -->
+              <label for="filter_price_range">Цена от и до</label>
+              <input type="range" name="price_range" id="price_range">
+
+              <label for="filter_price_min">Минимальная цена</label>
+              <input type="text" name="price_min" id="price_min">
+              
+              <label for="filter_price_max">Максимальная цена</label>
+              <input type="text" name="price_max" id="price_max">
+
             </fieldset>
   
             <fieldset class="filter_group">
@@ -144,6 +156,15 @@
         </section>
 
         <!-- панель сортировки -->
+        <section class="catalog_sort sort">
+          <h2>Сортировка</h2>
+
+          <ul class="sort_list">
+            <li class="sort_item"><a href="">По цене</a></li>
+            <li class="sort_item"><a href="">По типу</a></li>
+            <li class="sort_item"><a href="">По функционалу</a></li>
+          </ul>
+        </section>
 
         <section class="catalog_goods">
           
