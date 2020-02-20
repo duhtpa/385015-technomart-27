@@ -492,6 +492,58 @@ img {
 
 /* MAIN */
 /* MAIN > WRAPPER*/
+.opportunities {
+  padding-top: 59px;
+}
+
+.opportunities_list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.opportunities_item {
+  position: relative;
+  width: 300px;
+  padding-top: 26px;
+  padding-left: 25px;
+  padding-bottom: 22px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  background-color: #ffbf47;
+}
+
+.opportunities_item h3 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.opportunities_item a {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  width: 135px;
+  background-color: rgba(0, 0, 0, 0.1);
+  padding-top: 13px;
+  text-align: center;
+  color: #ffffff;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+
+.opportunities_slider {
+  width: 620px;
+  height: 266px;
+  background-color: #ccc;
+  margin-left: 20px;
+}
+
 .blocks_wrapper {
   display: flex;
   justify-content: space-between;
@@ -881,7 +933,8 @@ img {
   display: none;
 }
 
-.goods_item .flag {
+.goods_item .flag,
+.opportunities_item .flag {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -892,7 +945,8 @@ img {
   z-index: 20;
 }
 
-.goods_item .flag-new {
+.goods_item .flag-new,
+.opportunities_item .flag-new {
   background: url(../img/flag_new.png) no-repeat 0 0;
 }
 
