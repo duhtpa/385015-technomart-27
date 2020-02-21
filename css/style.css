@@ -1551,7 +1551,16 @@ img {
   color: #000000;
   border-radius: 3px;
   text-transform: uppercase;
-} 
+}
+
+.pages_item a:hover,
+.pages_item a:focus {
+  border-color: #bdc6ca;
+}
+
+.pages_item a:active {
+  border-color: #ee3643;
+}
 
 .pages_item:last-of-type a {
   padding-left: 27px;
