@@ -668,10 +668,12 @@ img {
   position: relative;
 }
 
-.goods-popular h2,
-.goods-popular a {
-  /* padding-left: 10px;
-  padding-right: 10px; */
+.goods_item_image {
+  margin-left: 1px;
+}
+
+.goods-popular ul {
+  margin-left: -10px;
 }
 
 .goods-popular h2 {
