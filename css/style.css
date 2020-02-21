@@ -47,6 +47,10 @@ img {
   overflow: hidden;
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER */
 .page_header_top a:not(:first-child) {
   width: 150px;
@@ -506,6 +510,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: -10px;
+  margin-bottom: 15px;
 }
 
 .slider_list,
@@ -606,26 +611,95 @@ img {
 }
 
 .opportunities_slider {
+  position: relative;
   width: 620px;
   height: 266px;
-  background-color: #ccc;
+  /* background-color: #ccc; */
   margin-left: 20px;
+}
+
+.opportunities_slider a {
+  /* display: block; */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 14px;
+  padding-right: 45px;
+  padding-bottom: 14px;
+  padding-left: 49px;
+  background-color: #ee3643;
+  margin-left: 25px;
+  margin-bottom: 22px;
+  border-radius: 3px;
 }
 
 .slider_list {
   flex-wrap: nowrap;
 }
 
+.slider_item {
+  position: relative;
+}
+
+.slider_item h3,
+.slider_item p {
+  position: absolute;
+  color: #ffffff;
+}
+.slider_item h3 {
+  font-size: 36px;
+  text-transform: uppercase;
+  top: -17px;
+  left: 24px;
+}
+
+.slider_item p {
+  font-size: 18px;
+  top: 44px;
+  left: 24px;
+}
+
 .goods-popular,
 .goods-popular ul {
   padding-left: 0;
   padding-right: 0;
+  position: relative;
 }
 
 .goods-popular h2,
 .goods-popular a {
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
+}
+
+.goods-popular h2 {
+  width: 940px;
+  background-color: #f9f5f0;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+}
+
+.goods-popular > a {
+  position: absolute;
+  right: 34px;
+  top: 26px;
+  padding: 12px 55px;
+  background-color: #ee3643;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
 }
 
 .producers_list {
