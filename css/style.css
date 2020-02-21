@@ -989,7 +989,7 @@ img {
   width: 940px;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 22px;
+  margin-top: 20px;
   padding: 0;
 }
 
@@ -1046,7 +1046,7 @@ img {
   text-transform: uppercase;
   background-color: #f2f6f8;
   padding-top: 28px;
-  padding-bottom: 28px;
+  padding-bottom: 24px;
   padding-left: 30px;
 }
 
@@ -1061,6 +1061,101 @@ img {
   text-transform: uppercase;
   line-height: 1.333;
   width: 220px;
+}
+
+.catalog_filter_title {
+  font-size: 13px;
+  padding-top: 14px;
+  padding-right: 149px;
+  padding-bottom: 15px;
+  padding-left: 18px;
+  background-color: #f7f3ec;
+  margin: 0;
+}
+
+.price_range_wrapper {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  margin-bottom: -8px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
+  background-color: #f7f3ec;
+}
+
+.price_range_wrapper .price_range {
+  display: block;
+}
+
+.filter_price_range {
+  position: absolute;
+  -webkit-appearance: none;
+  width: 90px;
+  height: 3px;
+  top: 38px;
+  background-color: #00ca74;
+}
+
+.filter_price_range.min {
+  left: 20px;
+  background:-webkit-linear-gradient(left ,#d7dcde 10%,#d7dcde 10%,#00ca74 0%, #00ca74 100%);
+}
+
+.filter_price_range.max {
+  right: 20px;
+  background:-webkit-linear-gradient(left ,#00ca74 0%,#00ca74 80%,#d7dcde 80%, #d7dcde 100%);
+}
+
+.filter_price_range::-webkit-slider-thumb {
+  position: relative;
+  -webkit-appearance: none;
+  width:20px;
+  height:20px;
+  border: 8px solid #ffffff;
+  border-radius:50%;
+  cursor:pointer;
+  box-shadow: 0 1px 2px 0 #000000;
+}
+
+.filter_group:first-of-type ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.filter_group .filter_price_min,
+.filter_group .filter_price_max {
+  display: block;
+  width: 96px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  text-align: center;
+  border: none;
+  border-radius: 3px;
+  background-color: #f7f3ec;
+}
+
+.filter_price_min {
+  position: relative;
+}
+
+.filter_price_min::before {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 20px;
+  width: 10px;
+  top: 15px;
+  left: 50px;
+  background-color: #000000;
+}
+
+.filter_group .filter_price_title {
+  font-size: 17px;
+  padding-top: 15px;
+  margin-bottom: 16px;
 }
 
 .filter_group {
@@ -1164,9 +1259,65 @@ img {
   cursor: pointer;
 }
 
+.catalog_sort {
+  position: relative;
+  display: flex;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 19px;
+  padding-right: 70px;
+  background-color: #f7f3ec;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.catalog_sort::before,
+.catalog_sort::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 11px;
+  height: 10px;
+  border: 6px solid transparent;
+}
+
+.catalog_sort::before {
+  top: 10px;
+  right: 48px;
+  border-bottom: 11px solid #ee3643;
+}
+
+.catalog_sort::after {
+  top: 18px;
+  right: 16px;
+  border-top: 11px solid #c5c5c5;
+}
+
+.catalog_sort h2,
+.sort_list {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog_sort h2 {
+  font-size: 13px;
+  padding-right: 127px;
+}
+
+.sort_list {
+  list-style: none;
+  display: flex;
+
+}
+
+.sort_item:not(:last-of-type) {
+  margin-right: 67px;
+}
+
 .catalog_goods {
   width: 729px;
-  margin-top: 60px; /* отступ под блок сортировки*/
+  /* margin-top: 60px; отступ под блок сортировки */
   margin-left: 20px;
 }
 
@@ -1369,7 +1520,47 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  margin-left: -15px;
+  margin-left: -20px;
+}
+
+.catalog_pages {
+  padding-top: 28px;
+  margin-bottom: 60px;
+}
+
+.pages_list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: -10px;
+}
+
+.pages_item {
+  padding-right: 7px;
+}
+
+.pages_item a {
+  display: block;
+  font-size: 13px;
+  padding-top: 12px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  border: 1px solid #e5e5e5;
+  color: #000000;
+  border-radius: 3px;
+  text-transform: uppercase;
+} 
+
+.pages_item:last-of-type a {
+  padding-left: 27px;
+  padding-right: 27px;
+}
+
+.pages_item a.active {
+  background-color: #ee3643;
+  color: #ffffff;
 }
 
 .catalog_about {

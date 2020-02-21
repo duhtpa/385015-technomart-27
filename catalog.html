@@ -91,21 +91,33 @@
         <section class="catalog_filter">
           <h2 class="visually-hidden">Фильтр товаров</h2>
 
-          <span class="catalog_filter_title">Фильтр</span>
+          <h3 class="catalog_filter_title">Фильтр</h3>
 
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter_group">
               <legend class="filter_price_title">Цена</legend>
 
               <!-- форма фильтрации по цене -->
-              <label for="filter_price_range">Цена от и до</label>
-              <input type="range" name="price_range" id="price_range">
+              <div class="price_range_wrapper">
+                <label for="filter_price_range" class="visually-hidden">Цена от и до</label>
+                <input class="filter_price_range price_range min" type="range" min="0" max="50" value="0" name="price_range" id="price_range">
 
-              <label for="filter_price_min">Минимальная цена</label>
-              <input type="text" name="price_min" id="price_min">
+                <label for="filter_price_range" class="visually-hidden">Цена от и до</label>
+                <input class="filter_price_range price_range max" type="range" min="50" max="100" value="90" name="price_range" id="price_range">
+              </div>
+
+              <ul>
+                <li>
+                  <label for="filter_price_min" class="visually-hidden">Минимальная цена</label>
+                  <input class="filter_price_min" type="text" name="price_min" id="price_min" value="0">    
+                </li>
+                <li>
+                  <label for="filter_price_max" class="visually-hidden">Максимальная цена</label>
+                  <input class="filter_price_max" type="filter_price_max" name="price_max" id="price_max" value="30000">    
+                </li>
+              </ul>
+
               
-              <label for="filter_price_max">Максимальная цена</label>
-              <input type="text" name="price_max" id="price_max">
 
             </fieldset>
   
@@ -155,18 +167,16 @@
           
         </section>
 
-        <!-- панель сортировки -->
-        <section class="catalog_sort sort">
-          <h2>Сортировка</h2>
-
-          <ul class="sort_list">
-            <li class="sort_item"><a href="">По цене</a></li>
-            <li class="sort_item"><a href="">По типу</a></li>
-            <li class="sort_item"><a href="">По функционалу</a></li>
-          </ul>
-        </section>
-
         <section class="catalog_goods">
+          <section class="catalog_sort sort">
+            <h2>Сортировка:</h2>
+
+            <ul class="sort_list">
+              <li class="sort_item"><a href="">По цене</a></li>
+              <li class="sort_item"><a href="">По типу</a></li>
+              <li class="sort_item"><a href="">По функционалу</a></li>
+            </ul>
+          </section>
           
           <section class="goods">
             <h3 class="visually-hidden">Список товаров</h3>
@@ -335,6 +345,15 @@
               </li>
             </ul>
           </section>
+
+          <div class="catalog_pages wrapper">
+            <ul class="pages_list">
+              <li class="pages_item"><a class="active" href="">1</a></li>
+              <li class="pages_item"><a href="">2</a></li>
+              <li class="pages_item"><a href="">3</a></li>
+              <li class="pages_item"><a href="">Следующая</a></li>
+            </ul>  
+          </div>
         </section>
       </div>
 
