@@ -510,7 +510,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: -10px;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 .slider_list,
@@ -670,13 +670,20 @@ img {
 
 .goods_item_image {
   margin-left: 1px;
+  margin-top: 1px;
 }
 
 .goods-popular ul {
   margin-left: -10px;
 }
 
-.goods-popular h2 {
+.producers-popular {
+  position: relative;
+  margin-bottom: 67px;
+}
+
+.goods-popular h2,
+.producers-popular h2 {
   width: 940px;
   background-color: #f9f5f0;
   padding: 0;
@@ -684,17 +691,24 @@ img {
   margin-left: 10px;
   margin-bottom: 20px;
   padding-left: 30px;
-  padding-top: 30px;
+  padding-top: 26px;
   padding-bottom: 30px;
   text-transform: uppercase;
   font-size: 30px;
   font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+  color: #32425c;
 }
 
-.goods-popular > a {
+.producers-popular h2 {
+  margin-left: 0;
+  padding-bottom: 27px;
+}
+
+.goods-popular > a,
+.producers-popular > a {
   position: absolute;
   right: 34px;
-  top: 26px;
+  top: 24px;
   padding: 12px 55px;
   background-color: #ee3643;
   color: #ffffff;
@@ -702,6 +716,10 @@ img {
   text-transform: uppercase;
   border-radius: 3px;
   font-family: "Cuprum", "Arial", "Helvetica", sans-serif;
+}
+
+.producers-popular > a {
+  padding: 11px 69px;
 }
 
 .producers_list {
@@ -723,11 +741,108 @@ img {
   margin-bottom: 20px;
 }
 
+.services {
+  background-color: #f4f8f9;
+  padding-top: 63px;
+  /* padding-bottom: 51px; */
+}
+
+.services h2 {
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 28px;
+}
+
+.services p {
+  width: 398px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services_block {
+  position: relative;
+  font-size: 21px;
+  display: flex;
+}
+
+.services_block::after {
+  position: absolute;
+  content: "";
+  width: 468px;
+  height: 261px;
+  top: 80px;
+  right: 0;
+  background-image: url(../img/services_delivery.png);
+}
+
+.services_item {
+  width: 240px;
+  padding: 19px 21px;
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.services_item.active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.services_block .services_list{
+  position: relative;
+  padding-top: 55px;
+  padding-bottom: 106px;
+}
+
+.services_list::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 279px;
+  top: 40px;
+  left: 230px;
+  background-image: url(../img/services_shadow.png);
+}
+
+.services_title {
+  color: #32425c;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.services_tab {
+  padding-top: 33px;
+}
+
+.services_tab .services_descr {
+  width: 268px;
+  line-height: 1.7;
+}
+
+.services_delivery {
+  margin-left: 80px;
+  padding-top: 47px;
+  line-height: 1.5;
+}
+
+.services_delivery h3 {
+  margin-bottom: 22px;
+}
+
 .blocks_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 86px;
-  padding-top: 78px;
+  padding-top: 69px;
 }
 
 .company_about {
