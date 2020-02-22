@@ -97,7 +97,6 @@
             <fieldset class="filter_group">
               <legend class="filter_price_title">Цена</legend>
 
-              <!-- форма фильтрации по цене -->
               <div class="price_range_wrapper">
                 <label for="filter_price_range" class="visually-hidden">Цена от и до</label>
                 <input class="filter_price_range price_range min" type="range" min="0" max="50" value="0" name="price_range" id="price_range">
@@ -116,32 +115,29 @@
                   <input class="filter_price_max" type="filter_price_max" name="price_max" id="price_max" value="30000">    
                 </li>
               </ul>
-
-              
-
             </fieldset>
   
             <fieldset class="filter_group">
               <legend class="filter_title">Производители</legend>
               <ul>
                 <li>
-                  <input class="filter_checkbox" type="checkbox" name="bosch" id="bosch" checked disabled>
+                  <input class="visually-hidden filter_checkbox" type="checkbox" name="bosch" id="bosch" checked disabled>
                   <label for="bosch">Bosch</label>
                 </li>
                 <li>
-                  <input class="filter_checkbox" type="checkbox" name="interscol" id="interscol">
+                  <input class="visually-hidden filter_checkbox" type="checkbox" name="interscol" id="interscol">
                   <label for="interscol">Интерсколл</label>
                 </li>
                 <li>
-                  <input class="filter_checkbox" type="checkbox" name="makita" id="makita" checked>
+                  <input class="visually-hidden filter_checkbox" type="checkbox" name="makita" id="makita" checked>
                   <label for="makita">Makita</label>
                 </li>
                 <li>
-                  <input class="filter_checkbox" type="checkbox" name="dewalt" id="dewalt">
+                  <input class="visually-hidden filter_checkbox" type="checkbox" name="dewalt" id="dewalt">
                   <label for="dewalt">Dewalt</label>
                 </li>
                 <li>
-                  <input class="filter_checkbox" type="checkbox" name="hitachi" id="hitachi">
+                  <input class="visually-hidden filter_checkbox" type="checkbox" name="hitachi" id="hitachi">
                   <label for="hitachi">Hitachi</label>
                 </li>
               </ul>
@@ -151,11 +147,11 @@
               <legend class="filter_title">Питание</legend>
               <ul>
                 <li>
-                  <input class="filter_radio" type="radio" name="power" id="battery" value="battery" checked>
+                  <input class="visually-hidden filter_radio" type="radio" name="power" id="battery" value="battery" checked>
                   <label for="battery">Аккумуляторные</label>
                 </li>
                 <li>
-                  <input class="filter_radio" type="radio" name="power" id="cable" value="cable">
+                  <input class="visually-hidden filter_radio" type="radio" name="power" id="cable" value="cable">
                   <label for="cable">Сетевые</label>
                 </li>
               </ul>
@@ -178,17 +174,12 @@
             </ul>
 
             <fieldset  class="sort_list_direction">
-              <input class="sort_direction_item" type="radio" name="sort_direction" id="sort_direction-up">
+              <input class="visually-hidden sort_direction_item" type="radio" name="sort_direction" id="sort_direction-up">
               <label for="sort_direction-up" class="visually-hidden sort_up">Сортровка по возрастанию</label>
 
-              <input class="sort_direction_item" type="radio" name="sort_direction" id="sort_direction-down">
+              <input class="visually-hidden sort_direction_item" type="radio" name="sort_direction" id="sort_direction-down">
               <label for="sort_direction-down" class="visually-hidden sort_down">Сортировка по убыванию</label>
             </fieldset>
-
-            <!-- <ul class="sort_direction_list">
-              <li class="sort_direction_item"><div class="flag flag_sort-up active"></div></li>
-              <li class="sort_direction_item"><div class="flag flag_sort-down"></div></li>
-            </ul> -->
           </section>
           
           <section class="goods">
