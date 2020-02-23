@@ -98,11 +98,11 @@
               <legend class="filter_price_title">Цена</legend>
 
               <div class="price_range_wrapper">
-                <label for="filter_price_range" class="visually-hidden">Цена от и до</label>
-                <input class="filter_price_range price_range min" type="range" min="0" max="50" value="0" name="price_range" id="price_range">
+                <label for="filter_price_range" class="visually-hidden">Цена от</label>
+                <input class="filter_price_range price_range min" type="range" min="0" max="50" value="0" name="price_range" id="price_range_min">
 
-                <label for="filter_price_range" class="visually-hidden">Цена от и до</label>
-                <input class="filter_price_range price_range max" type="range" min="50" max="100" value="90" name="price_range" id="price_range">
+                <label for="filter_price_range" class="visually-hidden">Цена до</label>
+                <input class="filter_price_range price_range max" type="range" min="50" max="100" value="90" name="price_range" id="price_range_max">
               </div>
 
               <ul>
@@ -435,12 +435,12 @@
       </div>
     </footer>
 
-    <div class="purchase_popup">
+    <div class="popup purchase_popup">
       <p>Товар добавлен в корзину!</p>
 
       <div class="popup_bottom">
-        <a href="">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
+        <a class="purchase_cart" href="">Оформить заказ</a>
+        <button class="purchase_next" type="button">Продолжить покупки</button>
       </div>
 
       <button class="popup_close" type="button">

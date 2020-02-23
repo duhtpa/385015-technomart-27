@@ -109,20 +109,14 @@
             <a href="">Открыть каталог</a>
           </li>
           <li>
-            <ul class="opportunities_list opportunities_list-inner">
-              <li class="opportunities_item discounts">
-                <article>
-                  <h3>Скидки 50%</h3>
-                  <a href="">На 350 товаров</a>
-                </article>
-              </li>
-              <li class="opportunities_item delivery">
-                <article>
-                  <h3>Доставка</h3>
-                  <a href="">Бесплатно</a>
-                </article>
-              </li>
-            </ul>
+            <article class="opportunities_item discounts">
+              <h3>Скидки 50%</h3>
+              <a href="">На 350 товаров</a>
+            </article>
+            <article class="opportunities_item delivery">
+              <h3>Доставка</h3>
+              <a href="">Бесплатно</a>
+            </article>
           </li>
         </ul>
       </section>
@@ -330,7 +324,7 @@
             Вы можете забрать товар сами,<br>
             заехав в наш офис:
           </p>
-          <a href="">
+          <a class="contacts_map-link" href="">
             <img class="contacts_map" src="img/map_preview.png"  width="300" height="158" alt="Офис компании по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
           </a>
           <a class="contacts_feedback-btn" href="">Заблудились? Напишите нам!</a>
@@ -397,13 +391,13 @@
       </div>
     </footer>
 
-    <section class="feedback_popup">
+    <section class="popup feedback_popup">
       <h2 class="visually-hidden">Форма обратной связи</h2>
 
       <form action="https://echo.htmlacademy.ru"" method="post">
         <p>
           <label for="user_name">Ваше имя:</label>
-          <input type="text" name="user_name" id="user_name" placeholder="Имя Фамилия">
+          <input type="text" name="user_name" id="user_name" placeholder="Имя Фамилия" >
         </p>
         <p>
           <label for="user_email">Ваш e-mail:</label>
@@ -411,11 +405,11 @@
         </p>
         <p>
           <label class="user_message" for="user_message">Текст письма:</label>
-          <input type="text" name="user_message" id="user_message" placeholder="В свободной форме">
+          <input type="text" name="user_message" id="user_message" placeholder="В свободной форме" >
         </p>
 
         <div class="popup_bottom">
-          <button type="submit">Отправить</button>
+          <button class="feedback_send" type="submit">Отправить</button>
         </div>
       </form>
 
@@ -424,13 +418,15 @@
       </button>
     </section>
 
-    <div class="map_popup">
+    <div class="popup map_popup">
       <img src="img/map_popup.png" width="940" height="446" alt="Развёрнутое изображение карты с адресом офиса по адресу г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
 
       <button class="popup_close" type="button">
         <span class="visually-hidden">Закрыть</span>
       </button>
     </div>
+
+    <script src="js/script.js"></script>
   </body>
 
 </html>
