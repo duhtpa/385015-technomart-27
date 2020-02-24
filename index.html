@@ -91,21 +91,26 @@
           </li>
           <li class="opportunities_slider">
             <ul class="slider_list">
-              <li class="slider_item">
+              <li class="slider_item drills">
                 <article>
                   <h3>Дрели</h3>
                   <p>Соседям на радость!</p>
-                  <img src="img/slider_drills.jpg" width="620" height="266" alt="Дрели">
                 </article>
               </li>
-              <li class="slider_item">
+              <li class="slider_item perforators">
                 <article class="hidden"> <!-- hidden - класс для временного скрытия -->
                   <h3>Перфораторы</h3>
                   <p>Настоящие мужские игрушки</p>
-                  <img src="img/slider_perforators.jpg" width="620" height="266" alt="Перфораторы">
+                  <!-- <img src="img/slider_perforators.jpg" width="620" height="266" alt="Перфораторы"> -->
                 </article>
               </li>
             </ul>
+
+            <ul class="slider_dots">
+              <li><button><span class="visually-hidden">Слайд 1</span></button></li>
+              <li><button class="active"><span class="visually-hidden">Слайд 2</span></button></li>
+            </ul>
+
             <a href="">Открыть каталог</a>
           </li>
           <li>
@@ -256,46 +261,44 @@
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
 
-          <ul class="services_block">
-            <li>
-              <ul class="services_list">
-                <li class="services_item active">Доставка</li>
-                <li class="services_item">Гарантия</li>
-                <li class="services_item">Кредит</li>    
-              </ul>
-            </li>
-            <li>
-              <ul class="services_tab">
-                <li class="services_delivery">
-                  <h3 class="services_title">Доставка</h3>
-                  <p class="services_descr">
-                    Мы с удовольствием доставим ваш товар прямо <br>
-                    к вашему подъезду совершенно бесплатно!
-                    Ведь мы неплохо заработаем, <br>
-                    поднимая его на ваш этаж!
-                  </p>
-                </li>
-                <li class="services_guarantee hidden">
-                  <h3 class="services_title">Гарантия</h3>
-                  <p class="services_descr">
-                    Если купленный у нас товар поломается или заискрит, <br>
-                    а также в случае пожара, спровоцированного его возгоранием,  
-                    вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
-                    сгоревший товар на новый. <br>
-                    Дом уж восстановите как-нибудь сами.
-                  </p>
-                </li>
-                <li class="services_credit hidden">
-                  <h3 class="services_title">Кредит</h3>
-                  <p class="services_descr">
-                    Залезть в долговую яму стало проще! <br>
-                    Кредитные консультанты придут вам на помощь.
-                  </p>
-                  <a>Отправить заявку</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
+          <div class="services_slider">
+            <ul class="services_menu">
+              <li class="services_tab active"><button class="services_btn" type="button">Доставка</button></li>
+              <li class="services_tab"><button class="services_btn" type="button">Гарантия</button></li>
+              <li class="services_tab"><button class="services_btn" type="button">Кредит</button></li>    
+            </ul>
+
+            <ul class="services_list">
+              <li class="services_item delivery">
+                <h3 class="services_title">Доставка</h3>
+                <p class="services_descr">
+                  Мы с удовольствием доставим ваш товар прямо <br>
+                  к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем, <br>
+                  поднимая его на ваш этаж!
+                </p>
+              </li>
+              <li class="services_item guarantee hidden">
+                <h3 class="services_title">Гарантия</h3>
+                <p class="services_descr">
+                  Если купленный у нас товар поломается или заискрит, <br>
+                  а также в случае пожара, спровоцированного его возгоранием,  
+                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
+                  сгоревший товар на новый. <br>
+                  Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="services_item credit hidden">
+                <h3 class="services_title">Кредит</h3>
+                <p class="services_descr">
+                  Залезть в долговую яму стало проще! <br>
+                  Кредитные консультанты придут вам на помощь.
+                </p>
+                <a>Отправить заявку</a>
+              </li>
+            </ul>
+          </div>
+          
         </div>
       </section>
 
