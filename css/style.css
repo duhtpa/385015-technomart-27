@@ -32,7 +32,7 @@ img {
 .main_nav a,
 .footer_nav a,
 .purchase_popup a,
-.phone_link {
+.phone_link a {
   color: #ffffff;
 }
 
@@ -104,7 +104,8 @@ img {
 }
 
 .page_footer .phone_link {
-  padding-left: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .page_header_logo,
@@ -303,6 +304,11 @@ img {
 .phone_link {
   margin-top: 0px;
   padding-left: 25px;
+}
+
+.phone_link a {
+  display: block;
+  width: 130px;
 }
 
 .user {
@@ -2083,21 +2089,24 @@ img {
 }
 
 .page_footer_nav li:not(:last-child) {
-  margin-right: 60px;
+  margin-right: 59px;
 }
 
 .page_footer_nav {
   padding-top: 20px;
 }
 
-.footer_nav_opportunity {
+.page_footer_nav .footer_nav_opportunity {
   margin-top: 34px;
+  margin-left: 24px;
 }
 
 .page_footer_nav ul {
+  margin: 18px 0;
   padding-left: 0;
   display: flex;
-  justify-content: flex-end;
+  flex-wrap: wrap;
+  /* justify-content: flex-end; */
 }
 
 .page_footer_bottom {
@@ -2129,12 +2138,12 @@ img {
   display: flex;
   flex-wrap: wrap;
   width: 370px;
-  /* justify-content: center; */
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
   margin-top: 12px;
-  padding-left: 118px;
-  padding-right: 90px;
+  padding-left: 34px;
+  padding-right: 20px;
 }
 
 .social a {
