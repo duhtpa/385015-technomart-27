@@ -279,7 +279,7 @@ img {
   padding-top: 4px;
   padding-bottom: 0;
   padding-left: 23px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .page_header_contacts::before {
@@ -331,7 +331,6 @@ img {
   padding-left: 48px;
   padding-right: 24px;
   background-color: #ffffff;
-  margin-right: 15px;
 }
 
 .user ul {
@@ -339,7 +338,7 @@ img {
   flex-wrap: wrap;
   padding: 0;
   margin: 0;
-  width: 230px;
+  width: 285px;
   justify-content: space-between;
   list-style: none;
 }
@@ -770,7 +769,7 @@ img {
   margin-left: 10px;
   margin-bottom: 20px;
   padding-left: 30px;
-  padding-top: 27px;
+  padding-top: 25px;
   padding-bottom: 27px;
   text-transform: uppercase;
   font-size: 30px;
@@ -787,8 +786,8 @@ img {
 .producers-popular > a {
   position: absolute;
   right: 34px;
-  top: 25px;
-  padding: 11px 55px;
+  top: 21px;
+  padding: 12px 55px;
   background-color: #ee3643;
   color: #ffffff;
   font-size: 14px;
@@ -799,6 +798,7 @@ img {
 
 .producers-popular > a {
   padding: 11px 69px;
+  top: 24px;
 }
 
 .producers_list {
@@ -942,7 +942,7 @@ img {
 
 .services_slider .services_menu{
   position: relative;
-  padding-top: 52px;
+  padding-top: 54px;
   padding-bottom: 98px;
 }
 
@@ -1036,7 +1036,7 @@ img {
   position: relative;
   font-size: 18px;
   font-weight: bold;
-  margin-top: -5px;
+  margin-top: -2px;
   margin-bottom: 36px;
   line-height: 1.37;
   list-style: none;
@@ -1141,7 +1141,7 @@ img {
 }
 
 .contacts_map {
-  margin-bottom: 35px;
+  margin-bottom: 36px;
 }
 
 .breadcrumbs a.document_index::before {
@@ -1236,7 +1236,7 @@ img {
 
 .catalog_filter_title {
   font-size: 13px;
-  padding-top: 11px;
+  padding-top: 10px;
   padding-right: 149px;
   padding-bottom: 10px;
   padding-left: 18px;
@@ -1300,40 +1300,6 @@ img {
   display: block;
 }
 
-/* .filter_price_range {
-  position: absolute;
-  -webkit-appearance: none;
-  width: 90px;
-  height: 3px;
-  top: 37px;
-  background-color: #00ca74;
-} */
-
-/* .filter_price_range.min {
-  left: 20px;
-  background:-webkit-linear-gradient(left ,#d7dcde 10%,#d7dcde 10%,#00ca74 0%, #00ca74 100%);
-  background: -o-linear-gradient(left ,#d7dcde 10%,#d7dcde 10%,#00ca74 0%, #00ca74 100%);
-  background: linear-gradient(left ,#d7dcde 10%,#d7dcde 10%,#00ca74 0%, #00ca74 100%);
-}
-
-.filter_price_range.max {
-  right: 20px;
-  background:-webkit-linear-gradient(left ,#00ca74 0%,#00ca74 80%,#d7dcde 80%, #d7dcde 100%);
-  background: -o-linear-gradient(left ,#00ca74 0%,#00ca74 80%,#d7dcde 80%, #d7dcde 100%);
-  background: linear-gradient(left ,#00ca74 0%,#00ca74 80%,#d7dcde 80%, #d7dcde 100%);
-} */
-
-/* .filter_price_range::-webkit-slider-thumb {
-  position: relative;
-  -webkit-appearance: none;
-  width:20px;
-  height:20px;
-  border: 8px solid #ffffff;
-  border-radius:50%;
-  cursor:pointer;
-  box-shadow: 0 1px 2px 0 #000000;
-} */
-
 .filter_group:first-of-type ul {
   display: flex;
   justify-content: space-between;
@@ -1346,8 +1312,8 @@ img {
   width: 96px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 12px;
-  padding-bottom: 14px;
+  padding-top: 11px;
+  padding-bottom: 11px;
   text-align: center;
   border: none;
   border-radius: 3px;
@@ -1364,7 +1330,7 @@ img {
   content: "";
   height: 1px;
   width: 10px;
-  bottom: 40px;
+  bottom: 44px;
   left: 105px;
   background-color: #000000;
 }
@@ -1372,7 +1338,7 @@ img {
 .filter_group .filter_price_title {
   font-size: 17px;
   padding-top: 12px;
-  margin-bottom: 19px;
+  margin-bottom: 15px;
 }
 
 .filter_group {
@@ -1389,7 +1355,8 @@ img {
 
 .filter_group li {
   list-style: none;
-  margin-bottom: 21px;
+  margin-bottom: 22px;
+  margin-top: 3px;
 }
 
 .filter_group ul {
@@ -1475,7 +1442,7 @@ img {
   width: 140px;
   background-color: transparent;
   border: 1px solid #e5e5e5;
-  margin-top: 40px;
+  margin-top: 36px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 3px;
@@ -1486,7 +1453,7 @@ img {
   position: relative;
   display: flex;
   padding-top: 11px;
-  padding-bottom: 12px;
+  padding-bottom: 7px;
   padding-left: 19px;
   padding-right: 20px;
   background-color: #f7f3ec;
@@ -1720,7 +1687,7 @@ img {
   background-color: #fff;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 6px;
 }
 
 .goods_item .goods_item_popup {
@@ -1880,7 +1847,7 @@ img {
 
 .catalog_about {
   background-color: #f2f6f8;
-  padding-bottom: 18px;
+  padding-bottom: 23px;
   padding-top: 66px;
 }
 
@@ -1888,7 +1855,7 @@ img {
   font-size: 30px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 23px;
   padding: 0;
 }
 
@@ -2175,7 +2142,7 @@ img {
   display: flex;
   align-items: center;
   padding-top: 20px;
-  padding-bottom: 12px;
+  padding-bottom: 9px;
 }
 
 .footer_bottom .wrapper {
