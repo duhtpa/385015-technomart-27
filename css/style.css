@@ -515,7 +515,7 @@ img {
   padding: 0;
   margin: 0;
   margin-left: -10px;
-  margin-bottom: 16px;
+  margin-bottom: 35px;
 }
 
 .slider_list,
@@ -535,61 +535,38 @@ img {
   padding-bottom: 22px;
   margin-left: 20px;
   margin-bottom: 20px;
+  background-repeat: no-repeat;
 }
 
 .opportunities_item.materials {
   background-color: #ffbf47;
-}
-
-.opportunities_item.delivery {
-  margin-top: -2px;
-}
-
-.opportunities_item::before {
-  content: "";
-  position: absolute;
-  width: 78px;
-  height: 72px;
-  right: 26px;
-  top: 27px;
-}
-
-.opportunities_item.materials::before {
-  background: url(../img/materials.svg) center no-repeat;
+  background-image: url(../img/materials.svg);
+  background-position: 83% 55%;
 }
 
 .opportunities_item.tool {
   background-color: #3bbce3;
-}
-
-.opportunities_item.tool::before {
-  background: url(../img/tool.svg) center no-repeat;
+  background-image: url(../img/tool.svg);
+  background-position: 87% 55%;
 }
 
 .opportunities_item.technic {
   background-color: #dc91d8;
-}
-
-.opportunities_item.technic::before {
-  background: url(../img/technic.svg) center no-repeat;
-}
-
-.opportunities_item.delivery {
-  background-color: #ffc047;
-}
-
-.opportunities_item.delivery::before {
-  background: url(../img/delivery.svg) center no-repeat;
+  background-image: url(../img/technic.svg);
+  background-position: 85% 55%;
 }
 
 .opportunities_item.discounts {
   background-color: #8ed78f;
+  background-image: url(../img/discount.svg);
+  background-position: 81% 55%;
 }
 
-.opportunities_item.discounts::before {
-  background: url(../img/discount.svg) center no-repeat;
+.opportunities_item.delivery {
+  background-color: #ffc047;
+  background-image: url(../img/delivery.svg);
+  background-position: 85% 55%;
 }
-
 
 .opportunities_item.technic::before,
 .opportunities_item.delivery::before,
@@ -615,6 +592,8 @@ img {
   text-align: center;
   color: #ffffff;
   padding-bottom: 9px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-transform: uppercase;
   border-radius: 3px;
 }
@@ -638,13 +617,14 @@ img {
 
 .opportunities_slider a {
   position: absolute;
+  font-size: 14px;
   bottom: 0;
   left: 0;
   color: #ffffff;
   text-transform: uppercase;
-  padding-top: 14px;
+  padding-top: 12px;
   padding-right: 45px;
-  padding-bottom: 14px;
+  padding-bottom: 10px;
   padding-left: 49px;
   background-color: #ee3643;
   margin-left: 25px;
@@ -681,22 +661,68 @@ img {
   position: relative;
 }
 
+.slider_item * {
+  margin: 0;
+  padding: 0;
+}
+
+.slider_item article{
+  width: 620px;
+  height: 266px;
+}
+
+.slider_item.drills article{
+  background-image: url(../img/slider_drills.jpg);
+}
+
+.slider_item.perforators article{
+  background-image: url(../img/slider_perforators.jpg);
+}
+
 .slider_item h3,
 .slider_item p {
-  position: absolute;
   color: #ffffff;
 }
 .slider_item h3 {
   font-size: 36px;
   text-transform: uppercase;
-  top: -17px;
-  left: 24px;
+  padding-top: 19px;
+  padding-left: 25px;
 }
 
 .slider_item p {
   font-size: 18px;
-  top: 44px;
-  left: 24px;
+  padding-top: 2px;
+  padding-left: 25px;
+}
+
+.slider_dots {
+  position: absolute;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  bottom: 36px;
+  right: 283px;
+}
+
+.slider_dots li {
+  margin-right: 11px;
+}
+
+.slider_dots button {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  display: block;
+  width: 11px;
+  height: 11px;
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+}
+
+.slider_dots button.active {
+  background-color: #b52933;
 }
 
 .goods-popular {
@@ -772,23 +798,26 @@ img {
 }
 
 .producers_item {
+  list-style: none;
+}
+
+.producers_item a {
   display: flex;
   width: 220px;
   height: 145px;
-  list-style: none;
-  box-shadow: 0px 0px 3px #eaeaea;
   padding-left: 10px;
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
+  box-shadow: 0px 0px 3px #eaeaea;
 }
 
-.producers_item:hover,
-.producers_item:focus {
+.producers_item a:hover,
+.producers_item a:focus {
   box-shadow: 0 10px 25px rgb(41, 52, 73, 0.5);
 }
 
-.producers_item:active {
+.producers_item a:active {
   box-shadow: 0 4px 10px rgb(41, 52, 73, 0.5);
 }
 
@@ -820,13 +849,13 @@ img {
   margin: 0;
 }
 
-.services_block {
+.services_slider {
   position: relative;
   font-size: 21px;
   display: flex;
 }
 
-.services_delivery::after {
+.services_item.delivery::after {
   position: absolute;
   content: "";
   width: 468px;
@@ -836,7 +865,7 @@ img {
   background-image: url(../img/services_delivery.png);
 }
 
-.services_guarantee::after {
+.services_item.guarantee::after {
   position: absolute;
   content: "";
   width: 389px;
@@ -846,7 +875,7 @@ img {
   background-image: url(../img/services_guarantee.png);
 }
 
-.services_credit::after {
+.services_item.credit::after {
   position: absolute;
   content: "";
   width: 465px;
@@ -856,7 +885,7 @@ img {
   background-image: url(../img/services_credit.png);
 }
 
-.services_credit a {
+.services_item.credit a {
   padding: 10px 44px;
   background-color: #ff5357;
   border: none;
@@ -868,34 +897,45 @@ img {
   cursor: pointer;
 }
 
-.services_item {
-  width: 240px;
-  padding: 19px 21px;
+.services_tab {
   background-color: #32425c;
-  color: #ffffff;
   box-shadow: inset 0px 1px 0px 0px #405069, inset 0px -1px 0px 0px #293449;
+}
+
+.services_tab button {
+  border: none;
+  width: 240px;
+  color: #ffffff;
+  background-color: transparent;
+  font-size: 21px;
+  margin: 0;
+  padding: 0;
+  padding: 16px 20px 21px 22px;
+  font-family: inherit;
+  font-weight: bold;
+  text-align: left;
   cursor: pointer;
 }
 
-.services_item:hover,
-.services_item:focus {
+.services_tab button:hover,
+.services_tab button:focus {
   background-color: #293449;
 }
 
-.services_item:active,
-.services_item.active {
+.services_tab button:active,
+.services_tab.active button { 
   background-color: #ffffff;
   color: #32425c;
   box-shadow: none;
 }
 
-.services_block .services_list{
+.services_slider .services_menu{
   position: relative;
   padding-top: 52px;
   padding-bottom: 98px;
 }
 
-.services_list::after {
+.services_menu::after {
   position: absolute;
   content: "";
   width: 10px;
@@ -913,35 +953,35 @@ img {
   text-transform: uppercase;
 }
 
-.services_tab {
+.services_list {
   padding-top: 33px;
 }
 
-.services_tab .services_descr {
+.services_list .services_descr {
   width: 268px;
   line-height: 1.8;
   margin-bottom: 28px;
 }
 
-.services_credit .services_descr {
+.services_item.credit .services_descr {
   width: 279px;
 }
 
-.services_guarantee .services_descr {
+.services_item.guarantee .services_descr {
   width: 380px;
 }
 
-.services_delivery,
-.services_guarantee,
-.services_credit {
+.services_item.delivery,
+.services_item.guarantee,
+.services_item.credit {
   margin-left: 80px;
   padding-top: 44px;
   line-height: 1.5;
 }
 
-.services_delivery h3,
-.services_guarantee h3,
-.services_credit h3 {
+.services_item.delivery h3,
+.services_item.guarantee h3,
+.services_item.credit h3 {
   margin-bottom: 22px;
 }
 
@@ -974,7 +1014,7 @@ img {
   font-weight: bold;
   margin-bottom: 33px;
   margin-top: -2px;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .about_descr:last-of-type {
@@ -990,23 +1030,29 @@ img {
   line-height: 1.37;
   list-style: none;
   padding: 0;
-  padding-top: 20px;
-  padding-left: 35px;
+  padding-top: 14px;
+  /* padding-left: 35px; */
+}
+
+.about_partners li {
+  display: flex;
+  align-items: center;
 }
 
 .about_partners li:not(:first-child) {
-  margin-top: 13px;
+  margin-top: 15px;
 }
 
 .about_partners li::before{
   content: "";
-  position: relative;
+  /* position: relative; */
   display: block;
   background-color: #ee3643;
   width: 25px;
   height: 2px;
-  top: 14px;
-  left: -35px;
+  /* top: 14px;
+  left: -35px; */
+  margin-right: 11px;
 }
 
 .about_more-link,
@@ -1084,7 +1130,7 @@ img {
 }
 
 .contacts_map {
-  margin-bottom: 38px;
+  margin-bottom: 35px;
 }
 
 .breadcrumbs {
@@ -1255,7 +1301,7 @@ img {
 .filter_group .filter_price_title {
   font-size: 17px;
   padding-top: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 19px;
 }
 
 .filter_group {
@@ -1519,7 +1565,7 @@ img {
   border: 1px solid #e5e5e5;
   margin-bottom: 20px;
   margin-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
 
 .goods_item:focus,
