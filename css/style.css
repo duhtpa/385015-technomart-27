@@ -1297,8 +1297,23 @@ img {
   background: #00ca74;
 }
 
-.price_range_toggle {
+.catalog_filter .price_range_toggle  {
+  position: relative;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  top: -9px;
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+/* .catalog_filter .price_range_toggle::after {
   position: absolute;
+  content: "";
+  display: block;
   top: 29px;
   width: 20px;
   height: 20px;
@@ -1307,21 +1322,27 @@ img {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
-}
+} */
 
-.range_toggle-min {
+.catalog_filter .range_toggle-min {
   left: 10%;
 }
 
-.range_toggle-max {
-  left: 73%;
+.catalog_filter .range_toggle-max {
+  left: 63%;
 }
 
-.price_range_toggle:hover {
+.catalog_filter .price_range_toggle:hover,
+.catalog_filter .price_range_toggle:focus {
   background: #6e801c;
+  border-color: #ffffff;
 }
 
-.price_range_controls {
+.catalog_filter .price_range_toggle:active {
+  border-color: #c3d6bc;
+}
+
+.catalog_filter .price_range_controls {
   position: relative;
   width: 220px;
   height: 80px;
@@ -1329,9 +1350,9 @@ img {
   background-color: #f7f3ec;
 }
 
-.price_range_controls .price_range_toggle {
+/* .price_range_controls .price_range_toggle {
   display: block;
-}
+} */
 
 .filter_group:first-of-type ul {
   display: flex;
