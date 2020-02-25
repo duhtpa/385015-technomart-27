@@ -261,7 +261,7 @@ img {
   color: #ee3643;
   font-style: italic;
   line-height: 1.4;
-  width: 205px;
+  width: 210px;
   margin: 0;
   padding-top: 3px;
   margin-left: 53px;
@@ -271,7 +271,7 @@ img {
 .page_header_contacts {
   position: relative;
   font-weight: bold;
-  margin-left: 66px;
+  margin-left: 55px;
 }
 
 .page_header_contacts a {
@@ -316,10 +316,12 @@ img {
 .phone_link a {
   display: block;
   margin-left: 2px;
+  padding-left: 20px;
 }
 
 .phone_link:last-of-type a {
   width: 130px;
+  padding-left: 0;
 }
 
 .user {
