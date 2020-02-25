@@ -356,6 +356,10 @@ img {
   .user ul {
     justify-content: flex-start
   }
+
+  .user_registration a {
+    margin-left: 15px;
+  }
 }
 
 .user_log-out {
