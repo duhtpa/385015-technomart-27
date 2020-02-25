@@ -1920,10 +1920,10 @@ img {
   bottom: 0;
   margin: 0;
   padding: 0;
-  background-color: #fff;
+  background-color: #ffffff;
   left: calc(50% - 310px);
   bottom: calc(50% - 141px);
-  box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5);
   padding-left: 80px;
   padding-right: 80px;
   padding-top: 32px;
@@ -1935,6 +1935,7 @@ img {
   font-size: 30px;
   padding-left: 100px;
   padding-bottom: 68px;
+  letter-spacing: -0.7px;
 }
 
 .purchase_popup p::before {
@@ -1963,8 +1964,8 @@ img {
   font-weight: normal;
   padding-left: 59px;
   padding-right: 62px;
-  margin-right: 20px;
-  margin-left: 7px;
+  margin-right: 19px;
+  margin-left: 1px;
 }
 
 .purchase_popup button {
@@ -1973,6 +1974,7 @@ img {
   padding: 0;
   padding-left: 44px;
   padding-right: 48px;
+  letter-spacing: -0.2px;
 }
 
 .purchase_popup button,
@@ -1995,7 +1997,7 @@ img {
   width: 620px;
   background-color: #ffffff;
   border-top: 7px solid #ff5357 ;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.5);
   bottom: calc(50% - 211px);
   left: calc(50% - 310px);
   z-index: 100;
