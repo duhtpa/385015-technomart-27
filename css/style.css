@@ -352,6 +352,12 @@ img {
   list-style: none;
 }
 
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .user ul {
+    justify-content: flex-start
+  }
+}
+
 .user_log-out {
   position: relative;
   font-size: 0;
