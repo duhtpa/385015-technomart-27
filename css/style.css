@@ -100,6 +100,10 @@ img {
   background-color: transparent;
 }
 
+.page_header_logo {
+  z-index: 1;
+}
+
 .page_header_logo,
 .page_footer_logo,
 .about_more-link,
