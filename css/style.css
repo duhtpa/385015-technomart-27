@@ -2072,12 +2072,10 @@ img {
 .purchase_popup .popup_close {
   position: absolute;
   padding: 0;
-  right: -20px;
-  top: 10px;
-  width: 21px;
-  height: 21px;
-  right: 7px;
-  top: 9px;
+  width: 30px;
+  height: 30px;
+  right: 5px;
+  top: 5px;
   background-color: transparent;
   border: none;
 }
@@ -2089,8 +2087,8 @@ img {
   display: block;
   width: 26px;
   height: 4px;
-  right: 0;
-  top: 8px;
+  right: 1px;
+  top: 12px;
   transform: rotate(45deg);
   background-color: #ee3643;
 }
