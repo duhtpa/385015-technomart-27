@@ -261,7 +261,7 @@ img {
   color: #ee3643;
   font-style: italic;
   line-height: 1.4;
-  width: 196px;
+  width: 205px;
   margin: 0;
   padding-top: 3px;
   margin-left: 53px;
@@ -271,7 +271,7 @@ img {
 .page_header_contacts {
   position: relative;
   font-weight: bold;
-  margin-left: 75px;
+  margin-left: 66px;
 }
 
 .page_header_contacts a {
@@ -393,7 +393,7 @@ img {
   padding-top: 11px; 
   margin: 0;
   padding-bottom: 10px;
-  padding-left: 47px;
+  padding-left: 46px;
   padding-right: 21px;
   letter-spacing: -0.6px;
 
@@ -1029,7 +1029,7 @@ img {
 }
 
 .company_about {
-  width: 519px;
+  width: 530px;
 }
 
 .company_contacts {
@@ -1345,7 +1345,7 @@ img {
   width: 96px;
   padding-left: 24px;
   padding-right: 24px;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 11px;
   text-align: center;
   border: none;
@@ -1706,7 +1706,7 @@ img {
   padding-left: 12px;
   padding-top: 11px;
   padding-bottom: 10px;
-  border-radius: 3px 0 0 3px;
+  border-radius: 3px;
 }
 
 .goods_item_price::after {
@@ -1715,7 +1715,7 @@ img {
   display: block;
   height: 100%;
   width: 30px;
-  right: -38px;
+  right: -37px;
   top: 0;
   border: 18px solid transparent;
   border-left: 20px solid #ee3643
