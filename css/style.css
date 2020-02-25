@@ -667,7 +667,42 @@ img {
   position: relative;
 }
 
-.slider_list::before,
+.opportunities_slider .slider_button-prev {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 40px;
+  top: -186px;
+  left: 27px;
+  background-color: transparent;
+  background-image: url(../img/btn_arrow_left.svg);
+  cursor: pointer;
+}
+
+.opportunities_slider .slider_button-next {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 40px;
+  top: -225px;
+  left: 580px;
+  background-color: transparent;
+  background-image: url(../img/btn_arrow_right.svg);
+  cursor: pointer;
+}
+
+.slider_button.slider_button-prev::before {
+  
+  /* left: 25px;
+  background-image: url(../img/btn_arrow_left.svg); */
+}
+
+/* .slider_list::after {
+  right: 20px;
+  background-image: url(../img/btn_arrow_right.svg);
+} */
+
+/* .slider_list::before,
 .slider_list::after {
   position: absolute;
   content: "";
@@ -685,7 +720,7 @@ img {
 .slider_list::after {
   right: 20px;
   background-image: url(../img/btn_arrow_right.svg);
-}
+} */
 
 .slider_item {
   position: relative;
