@@ -46,6 +46,7 @@ feedbackBtn.addEventListener("click", function (evt) {
 feedbackForm.addEventListener("submit", function (evt) {
 	if (!userName.value || !userMessage.value) {
 		evt.preventDefault();
+		feedbackPopup.classList.add("popup-error");
 		userName.style.borderColor = "#f15f5f";			// немного красоты
 		userMessage.style.borderColor = "#f15f5f";	// 
 		console.log("Не заполнены обязательные поля!");
@@ -60,6 +61,7 @@ feedbackForm.addEventListener("submit", function (evt) {
 feedbackClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedbackPopup.classList.remove("popup-show");
+	feedbackPopup.classList.add("popup-error");
 });
 
 // закрытие окна по Esc
