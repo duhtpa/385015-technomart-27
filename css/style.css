@@ -921,7 +921,8 @@ img {
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
+  letter-spacing: -0.5px;
 }
 
 .services p {
@@ -970,7 +971,7 @@ img {
   content: "";
   width: 465px;
   height: 285px;
-  top: 54px;
+  top: 51px;
   right: -10px;
   background-image: url(../img/services_credit.png);
 }
@@ -1000,7 +1001,7 @@ img {
   font-size: 21px;
   margin: 0;
   padding: 0;
-  padding: 16px 20px 21px 22px;
+  padding: 17px 20px 21px 22px;
   font-family: inherit;
   font-weight: bold;
   text-align: left;
@@ -1037,11 +1038,13 @@ img {
 
 .services_title {
   color: #32425c;
-  font-size: 32px;
+  font-size: 36px;
   margin: 0;
   padding: 0;
   text-transform: uppercase;
-  letter-spacing: 1.8px;
+  letter-spacing: -0.6px;
+  margin-top: -3px;
+  margin-left: 1px;
 }
 
 .services_list {
@@ -1050,18 +1053,18 @@ img {
 
 .services_list .services_descr {
   width: 282px;
-  line-height: 1.8;
-  margin-bottom: 28px;
+  line-height: 1.75;
+  margin-bottom: 30px;
   letter-spacing: 0.3px;
 
 }
 
 .services_item.credit .services_descr {
-  width: 279px;
+  width: 290px;
 }
 
 .services_item.guarantee .services_descr {
-  width: 380px;
+  width: 390px;
 }
 
 .services_item.delivery,
@@ -1075,14 +1078,14 @@ img {
 .services_item.delivery h3,
 .services_item.guarantee h3,
 .services_item.credit h3 {
-  margin-bottom: 22px;
+  margin-bottom: 19px;
 }
 
 .blocks_wrapper {
   display: flex;
   justify-content: space-between;
   padding-bottom: 86px;
-  padding-top: 77px;
+  padding-top: 75px;
 }
 
 .company_about {
@@ -1303,10 +1306,10 @@ img {
   color: #32425c;
   text-transform: uppercase;
   background-color: #f2f6f8;
-  padding-top: 27px;
+  padding-top: 28px;
   padding-bottom: 29px;
-  padding-left: 30px;
-  letter-spacing: -1px;
+  padding-left: 28px;
+  letter-spacing: -0.8px;
   margin-top: 19px;
 }
 
@@ -1421,8 +1424,8 @@ img {
 .filter_group .filter_price_max {
   display: block;
   width: 96px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 9px;
+  padding-right: 5px;
   padding-top: 9px;
   padding-bottom: 11px;
   text-align: center;
@@ -1443,7 +1446,7 @@ img {
   content: "";
   height: 1px;
   width: 10px;
-  bottom: 44px;
+  bottom: 41px;
   left: 105px;
   background-color: #000000;
 }
@@ -1460,6 +1463,7 @@ img {
   border-bottom: 1px solid #e5e5e5;
   margin: 0;
   margin-bottom: 18px;
+  margin-top: 0;
   padding: 0;
 }
 
@@ -1469,8 +1473,8 @@ img {
 
 .filter_group li {
   list-style: none;
-  margin-bottom: 22px;
-  margin-top: 2px;
+  margin-bottom: 21px;
+  margin-top: 1px;
 }
 
 .filter_group ul {
@@ -1487,10 +1491,13 @@ img {
   user-select: none;
   padding-left: 35px;
   font-weight: normal;
+  letter-spacing: -0.5px;
+  font-size: 16px;
+  line-height: 1.2;
 }
 
 .filter_title {
-  letter-spacing: -0.3px;
+  letter-spacing: -0.9px;
 }
 
 .filter_checkbox + label::before,
@@ -1562,7 +1569,7 @@ img {
   width: 140px;
   background-color: transparent;
   border: 1px solid #e5e5e5;
-  margin-top: 37px;
+  margin-top: 39px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 3px;
@@ -1957,8 +1964,9 @@ img {
 }
 
 .pages_item:last-of-type a {
-  padding-left: 27px;
-  padding-right: 27px;
+  padding-left: 30px;
+  padding-right: 30px;
+  letter-spacing: -0.9px;
 }
 
 .pages_item a.active {
@@ -1969,15 +1977,16 @@ img {
 .catalog_about {
   background-color: #f2f6f8;
   padding-bottom: 21px;
-  padding-top: 63px;
+  padding-top: 64px;
 }
 
 .catalog_about_title {
-  font-size: 30px;
+  font-size: 30.3px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   padding: 0;
+  letter-spacing: -0.6px;
 }
 
 .catalog_about_descr {
@@ -1986,7 +1995,7 @@ img {
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
-  letter-spacing: 0.3px;
+  letter-spacing: 0.35px;
 }
 
 .purchase_popup {
