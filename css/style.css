@@ -1102,7 +1102,8 @@ img {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 23px;
-  letter-spacing: -0.5px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
 }
 
 .about_descr,
