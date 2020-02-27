@@ -44,8 +44,16 @@ feedbackForm.addEventListener("submit", function (evt) {
 		feedbackPopup.classList.remove("popup-error");
 		feedbackPopup.offsetWidth = feedbackPopup.offsetWidth;
 		feedbackPopup.classList.add("popup-error");
-		userName.style.borderColor = "#f15f5f";
-		userMessage.style.borderColor = "#f15f5f";
+		if (!userName.value) {
+			userName.classList.add("form-error");
+		} else {
+			userName.classList.remove("form-error");
+		}
+		if (!userMessage.value) {
+			userMessage.classList.add("form-error");
+		} else {
+			userMessage.classList.remove("form-error");
+		}
 	} else {
 		if (isStorageSupport) {
 			localStorage.setItem("userName", userName.value);
@@ -58,6 +66,8 @@ feedbackClose.addEventListener("click", function (evt) {
 	evt.preventDefault();
 	feedbackPopup.classList.remove("popup-show");
 	feedbackPopup.classList.remove("popup-error");
+	userName.classList.remove("form-error");
+	userMessage.classList.remove("form-error");
 });
 
 // закрытие окна по Esc
@@ -67,6 +77,8 @@ window.addEventListener("keydown", function (evt) {
 		if (feedbackPopup.classList.contains("popup-show")) {
 			feedbackPopup.classList.remove("popup-show");
 			feedbackPopup.classList.remove("popup-error");
+			userName.classList.remove("form-error");
+			userMessage.classList.remove("form-error");
 		}
 	}
 });
