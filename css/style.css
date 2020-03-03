@@ -1667,11 +1667,13 @@ img {
   border-top-color: #000000;
 }
 
-.sort_up:active {
+.sort_up:active,
+.sort_up.active {
   border-bottom-color: #ee3643;
 }
 
-.sort_down:active {
+.sort_down:active,
+.sort_down.active {
   border-top-color: #ee3643;
 }
 
