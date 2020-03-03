@@ -1,14 +1,14 @@
 window.addEventListener('load', function () {
 
-		//---------------------------------------------------------
-		// -----------ЭЛЕМЕНТЫ ВЫЗОВА ВСПЛЫВАЮЩИХ ОКОН-------------
+  //---------------------------------------------------------
+  // -----------ЭЛЕМЕНТЫ ВЫЗОВА ВСПЛЫВАЮЩИХ ОКОН-------------
   var
     feedbackBtn = document.querySelector(".contacts_feedback-btn"),
     mapPreview = document.querySelector(".contacts_map-link"),
-		goodsBuy = document.querySelectorAll(".goods_item_popup a");
-		
-	//-----------------------------------------------------------
-	//-----------------ФОРМА ОБРАТНОЙ СВЯЗИ----------------------
+    goodsBuy = document.querySelectorAll(".goods_item_popup a");
+    
+  //-----------------------------------------------------------
+  //-----------------ФОРМА ОБРАТНОЙ СВЯЗИ----------------------
   if (feedbackBtn) {
     var
       feedbackPopup = document.querySelector(".feedback_popup"),
@@ -19,7 +19,7 @@ window.addEventListener('load', function () {
       userMessage = feedbackForm.querySelector("#user_message"),
       feedbackClose = feedbackPopup.querySelector(".popup_close");
 
-		// отображение окна
+    // отображение окна
     feedbackBtn.addEventListener("click", function (evt) {
       evt.preventDefault();
       feedbackPopup.classList.add("popup-show");
@@ -76,15 +76,15 @@ window.addEventListener('load', function () {
     });
   }
 
-	//-----------------------------------------------------------
-	//-------------------------КАРТА-----------------------------
+  //-----------------------------------------------------------
+  //-------------------------КАРТА-----------------------------
   if (mapPreview) {
     var
       mapPopup = document.querySelector(".map_popup"), // попап
       mapStatic = document.querySelector(".map_popup-static"), // картинка-
       mapClose = mapPopup.querySelector(".popup_close"); // закрыть развёрнутую карту
 
-		// отображение окна
+    // отображение окна
     mapPreview.addEventListener("click", function (evt) {
       evt.preventDefault();
       mapPopup.classList.add("popup-show");
@@ -108,15 +108,15 @@ window.addEventListener('load', function () {
     });
   }
 
-	//-----------------------------------------------------------
-	//--------УВЕДОМЛЕНИЕ О ДОБАВЛЕНИИ ТОВАРА В КОРЗИНУ----------
+  //-----------------------------------------------------------
+  //--------УВЕДОМЛЕНИЕ О ДОБАВЛЕНИИ ТОВАРА В КОРЗИНУ----------
   if (goodsBuy) {
     var
       purchasePopup = document.querySelector(".purchase_popup"), // попап
       purchaseNext = document.querySelector(".purchase_next"), // кнопка "Продолжить покупки"
       purchaseClose = purchasePopup.querySelector(".popup_close"); // закрыть окно обратной связи
 
-		// отображение окна
+    // отображение окна
     goodsBuy.forEach(function (item, i, goodsBuy) {
       item.onclick = function (evt) {
         evt.preventDefault();
@@ -145,9 +145,9 @@ window.addEventListener('load', function () {
       evt.preventDefault();
       purchasePopup.classList.remove("popup-show");
     });
-	}
-	
-	//-----------------------------------------------------------
+  }
+
+  //-----------------------------------------------------------
   // -----------------------LocalStorage-----------------------
   isStorageSupport = true; // дефолтное значение поддержки LocalStorage
   storage = ""; // дефолтное значение сохраняемого параметра	
