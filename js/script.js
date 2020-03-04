@@ -117,12 +117,12 @@ window.addEventListener('load', function () {
       purchaseClose = purchasePopup.querySelector(".popup_close"); // закрыть окно обратной связи
 
     // отображение окна
-    goodsBuy.forEach(function (item, i, goodsBuy) {
-      item.onclick = function (evt) {
+    for (var i=0; i < goodsBuy.length; i++) {
+      goodsBuy[i].addEventListener("click", function (evt) {
         evt.preventDefault();
         purchasePopup.classList.add("popup-show");
-      };
-    });
+      });
+    };
 
     // закрытие окна по кнопке Х
     purchaseClose.addEventListener("click", function (evt) {
