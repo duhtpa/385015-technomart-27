@@ -1,5 +1,18 @@
 window.addEventListener('load', function () {
 
+  //-----------------------------------------------------------
+  // -----------------------LocalStorage-----------------------
+  var
+    isStorageSupport = true, // дефолтное значение поддержки LocalStorage
+    storage = ""; // дефолтное значение сохраняемого параметра	
+
+  try { // проверка (поддержки LocalStorage)...
+    storage = localStorage.getItem("userName"); // если данная инструкция выполнима - выполняем её...
+  } catch (err) { // иначе...
+    isStorageSupport = false; // поддержки LocalStorage нет 
+  };
+
+
   //---------------------------------------------------------
   // -----------ЭЛЕМЕНТЫ ВЫЗОВА ВСПЛЫВАЮЩИХ ОКОН-------------
   var
@@ -145,17 +158,6 @@ window.addEventListener('load', function () {
       evt.preventDefault();
       purchasePopup.classList.remove("popup-show");
     });
-  }
-
-  //-----------------------------------------------------------
-  // -----------------------LocalStorage-----------------------
-  isStorageSupport = true; // дефолтное значение поддержки LocalStorage
-  storage = ""; // дефолтное значение сохраняемого параметра	
-
-  try { // проверка (поддержки LocalStorage)...
-    storage = localStorage.getItem("userName"); // если данная инструкция выполнима - выполняем её...
-  } catch (err) { // иначе...
-    isStorageSupport = false; // поддержки LocalStorage нет 
   }
 
 });

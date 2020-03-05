@@ -378,30 +378,18 @@ img {
   width: 47.1px;
 }
 
-.user_log-out svg {
-  height: 17px;
-  right: 10px;
-  position: absolute;
-  top: 14px;
-  width: 21px;
-}
-
 .user_log-out:hover path {
   fill: #000000;
 } 
 
 .user_account {
   flex-direction: column;
-  width: 300px; /*примерно*/
+  width: 300px;
 }
 
 .user_account div {
   display: flex;
   margin-bottom: 7px;
-}
-
-.user li {
-  /* list-style: none; */
 }
 
 .user .user_name {
@@ -414,7 +402,6 @@ img {
   padding-right: 21px;
   padding-top: 11px; 
   position: relative;
-
 }
 
 .user_name svg {
@@ -446,6 +433,12 @@ img {
   position: absolute; 
   top: 13px;
   width: 20px;
+}
+
+.user_log-out svg {
+  left: 18px;
+  top: 14px;
+  width: 21px;
 }
 
 .user_log-in a:hover,
@@ -574,7 +567,7 @@ img {
   margin-bottom: 20px;
   margin-left: 20px;
   padding-bottom: 22px;
-  padding-left: 25px;
+  padding-left: 24px;
   padding-top: 23px;
   position: relative;
   width: 300px;
@@ -583,31 +576,31 @@ img {
 .opportunities_item.materials {
   background-color: #ffbf47;
   background-image: url(../img/materials.svg);
-  background-position: 83% 55%;
+  background-position: 83% 54%;
 }
 
 .opportunities_item.tool {
   background-color: #3bbce3;
   background-image: url(../img/tool.svg);
-  background-position: 87% 55%;
+  background-position: 87% 54%;
 }
 
 .opportunities_item.technic {
   background-color: #dc91d8;
   background-image: url(../img/technic.svg);
-  background-position: 86% 54%;
+  background-position: 86% 50%;
 }
 
 .opportunities_item.discounts {
   background-color: #8ed78f;
   background-image: url(../img/discount.svg);
-  background-position: 81% 55%;
+  background-position: 81% 50%;
 }
 
 .opportunities_item.delivery {
   background-color: #ffc047;
   background-image: url(../img/delivery.svg);
-  background-position: 85% 55%;
+  background-position: 86% 53%;
 }
 
 .opportunities_item.technic::before,
@@ -685,10 +678,10 @@ img {
   cursor: pointer;
   display: block;
   height: 40px;
-  left: 27px;
+  left: 26px;
   top: -186px;
   position: relative;
-  width: 20px;
+  width: 22px;
 }
 
 .opportunities_slider .slider_button-next {
@@ -697,10 +690,10 @@ img {
   cursor: pointer;
   display: block;
   height: 40px;
-  left: 580px;
+  left: 579px;
   position: relative;
   top: -225px;
-  width: 20px;
+  width: 22px;
 }
 
 .slider_item {
@@ -754,7 +747,7 @@ img {
 }
 
 .slider_dots li {
-  margin-right: 11px;
+  margin-right: 10px;
 }
 
 .slider_dots button {
@@ -1414,7 +1407,7 @@ img {
 .filter_group li {
   list-style: none;
   margin-bottom: 21px;
-  margin-top: 1px;
+  margin-top: 3px;
 }
 
 .filter_group ul {
