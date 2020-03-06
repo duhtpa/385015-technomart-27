@@ -715,10 +715,12 @@ img {
 
 .slider_item.drills article {
   background-image: url(../img/slider_drills.jpg);
+  background-color: #505050;
 }
 
 .slider_item.perforators article {
   background-image: url(../img/slider_perforators.jpg);
+  background-color: #505050;
 }
 
 .slider_item h3,
