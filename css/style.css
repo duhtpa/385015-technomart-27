@@ -879,12 +879,13 @@ img {
 }
 
 .services p {
-  font-size: 14px;
-  letter-spacing: 0.25px;
-  line-height: 1.7;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.05px;
+  line-height: 1.78;
   margin-bottom: 18px;
   margin-top: -4px;
-  width: 400px;
+  width: 420px;
 }
 
 .services ul {
@@ -1005,10 +1006,10 @@ img {
 }
 
 .services_list .services_descr {
-  letter-spacing: 0.3px;
-  line-height: 1.75;
+  letter-spacing: 0px;
+  line-height: 1.9;
   margin-bottom: 30px;
-  width: 282px;
+  width: 275px;
 }
 
 .services_item.credit .services_descr {
@@ -1060,9 +1061,10 @@ img {
 
 .about_descr,
 .contacts_descr {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 1.8;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+  line-height: 2 ;
   margin-bottom: 29px;
   margin-top: 0;
 }
@@ -1078,7 +1080,7 @@ img {
   font-weight: bold;
   margin-bottom: 35px;
   margin-top: 0;
-  line-height: 1.37;
+  line-height: 1.4;
   list-style: none;
   padding: 0;
   padding-top: 12px;
@@ -1123,6 +1125,7 @@ img {
 
 .contacts_feedback-btn {
   width: 300px;
+  letter-spacing: -0.3px;
 }
 
 .about_more-link:hover,
@@ -1179,7 +1182,7 @@ img {
 }
 
 .contacts_map {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .breadcrumbs a.document_index::before {
@@ -1499,7 +1502,7 @@ img {
   border-radius: 3px;
   cursor: pointer;
   font-size: 12px;
-  font-weight: bold;
+  font-weight: normal;
   line-height: 1.384;
   margin-top: 39px;
   padding-bottom: 9px;
@@ -1900,7 +1903,7 @@ img {
 .pages_item:last-of-type a {
   padding-left: 30px;
   padding-right: 30px;
-  letter-spacing: -0.9px;
+  letter-spacing: 0.2px;
 }
 
 .pages_item a.active {
@@ -1924,12 +1927,13 @@ img {
 }
 
 .catalog_about_descr {
-  font-size: 14px;
-  line-height: 1.7;
+  font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.1px;
+  line-height: 1.8;
   margin: 0;
   padding: 0;
   margin-bottom: 50px;
-  letter-spacing: 0.35px;
 }
 
 .purchase_popup {
@@ -2088,6 +2092,8 @@ img {
   border: none;
   border-radius: 3px;
   font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 0.6px;
   margin: 0;
   padding: 0;
   padding-bottom: 11px;
