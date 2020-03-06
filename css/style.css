@@ -370,6 +370,10 @@ img {
   .user_registration a {
     margin-left: 15px;
   }
+/* 
+  .services_item.delivery::after {
+    z-index: 0;
+  } */
 }
 
 .user_log-out {
@@ -913,7 +917,7 @@ img {
   right: 0;
   top: 75px;
   width: 468px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .services_item.guarantee::after {
@@ -924,7 +928,7 @@ img {
   right: -8px;
   top: 53px;
   width: 389px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .services_item.credit::after {
@@ -935,7 +939,7 @@ img {
   right: -10px;
   top: 51px;
   width: 465px;
-  z-index: -1;
+  z-index: 0;
 }
 
 .services_item.credit a {
@@ -1011,7 +1015,6 @@ img {
 
 .services_list {
   padding-top: 33px;
-  z-index: 1;
 }
 
 .services_list .services_descr {
@@ -1041,6 +1044,13 @@ img {
 .services_item.guarantee h3,
 .services_item.credit h3 {
   margin-bottom: 19px;
+}
+
+.services_item.delivery p,
+.services_item.guarantee p,
+.services_item.credit p {
+  position: relative;
+  z-index: 1;
 }
 
 .blocks_wrapper {
