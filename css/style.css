@@ -795,7 +795,7 @@ img {
 }
 
 .producers-popular {
-  margin-bottom: 66px;
+  margin-bottom: 65px;
   position: relative;
 }
 
@@ -1056,8 +1056,8 @@ img {
 .blocks_wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 86px;
-  padding-top: 76px;
+  padding-bottom: 85px;
+  padding-top: 75px;
 }
 
 .company_about {
@@ -1089,7 +1089,7 @@ img {
 }
 
 .about_descr:last-of-type {
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 9px;
   margin-top: -4px;
 }
@@ -1097,12 +1097,12 @@ img {
 .about_partners {
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 35px;
+  margin-bottom: 34px;
   margin-top: 0;
   line-height: 1.4;
   list-style: none;
   padding: 0;
-  padding-top: 12px;
+  padding-top: 10px;
   position: relative;
 }
 
@@ -1133,7 +1133,7 @@ img {
   line-height: 1.286;
   margin-left: 1px;
   padding-bottom: 10px;
-  padding-top: 10px;
+  padding-top: 11px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -1201,7 +1201,7 @@ img {
 }
 
 .contacts_map {
-  margin-bottom: 35px;
+  margin-bottom: 37px;
 }
 
 .breadcrumbs a.document_index::before {
